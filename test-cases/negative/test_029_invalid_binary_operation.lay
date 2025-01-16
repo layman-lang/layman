@@ -1,0 +1,7 @@
+# negative test: invalid binary operation
+# expected: error should be thrown
+
+the variable x of type String is 'hello'
+the variable y of type Number is x minus 5
+
+

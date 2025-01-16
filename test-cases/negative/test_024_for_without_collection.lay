@@ -1,0 +1,7 @@
+# negative test: for each without collection
+# expected: error should be thrown
+
+for each item do
+  print item
+
+

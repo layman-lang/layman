@@ -1,0 +1,20 @@
+print "--- Test Standard Collections Library ---"
+
+import collections as collections
+
+the variable numbers is call function create_list with 1, 2, 3, 4, 5
+
+# Test Map
+print "Testing Map (Double):"
+the variable doubled is call function collections.map with numbers, function of x returning x times 2
+print doubled
+
+# Test Filter
+print "Testing Filter (Even):"
+the variable evens is call function collections.filter with numbers, function of x returning x modulo 2 equals 0
+print evens
+
+# Test Reduce
+print "Testing Reduce (Sum):"
+the variable sum is call function collections.reduce with numbers, function of acc, x returning acc plus x, 0
+print "Sum is: " plus sum

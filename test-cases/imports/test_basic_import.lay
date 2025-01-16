@@ -1,0 +1,13 @@
+print "--- Test 1: Import from file ---"
+from file 'math_utils.lay' import add, PI
+
+the variable sum is call function add with 10 and 20
+print "Sum: " plus sum
+print "PI: " plus PI
+
+print "--- Test 2: Import as alias ---"
+import file 'math_utils.lay' as mu
+
+print "PI from alias: " plus mu.PI
+print "Calling add from alias: " plus call function mu.add with 5, 5
+

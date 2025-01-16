@@ -1,0 +1,24 @@
+# test case 18
+# description: add a new user to an organization and update count
+
+define class Organization that has
+  property count which is Number
+  
+  define function add_user that takes user as Person returns Void
+    self.count = self.count + 1
+
+define class Person that has
+  property name which is Text
+  property email which is Text
+
+ the variable organization of type Organization is a new Organization with
+  count which is 0
+
+ the variable new_user of type Person is a new Person with
+  name which is "alice"
+  email which is "alice@example.com"
+
+# use add_user method
+call function add_user on organization with argument new_user
+print "user added"
+print organization.count

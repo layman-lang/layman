@@ -1,0 +1,52 @@
+# test case 80
+# description: Test Case Description for Layman Programming Language Test Case Number 80:
+
+# The test case verifies that a program can correctly perform simple arithmetic operations, such as addition and subtraction, by testing 2 separate inputs where the result of each operation is manually calculated to ensure accuracy. The test checks if the program produces the expected output for basic arithmetic expressions involving whole numbers.
+
+define function add_numbers that takes a as Number and b as Number and returns Number
+  return a plus b
+
+define function subtract_numbers that takes a as Number and b as Number and returns Number
+  return a minus b
+
+# test addition: 5 + 1 = 6, 7 + 1 = 8
+the variable number_one of type Number is 5
+the variable number_two of type Number is 7
+
+the variable result_one of type Number is call function add_numbers with argument number_one and argument 1
+the variable result_two of type Number is call function add_numbers with argument number_two and argument 1
+
+# verify first result: 6
+if result_one is 6 then
+  print "result is correct"
+else
+  print "something went wrong"
+end if
+
+# verify second result: 8
+if result_two is 8 then
+  print "result is correct"
+else
+  print "something went wrong"
+end if
+
+# test subtraction: 10 - 3 = 7, 15 - 3 = 12
+the variable number_three of type Number is 10
+the variable number_four of type Number is 15
+
+the variable result_three of type Number is call function subtract_numbers with argument number_three and argument 3
+the variable result_four of type Number is call function subtract_numbers with argument number_four and argument 3
+
+# verify third result: 7
+if result_three is 7 then
+  print "result is correct"
+else
+  print "something went wrong"
+end if
+
+# verify fourth result: 12
+if result_four is 12 then
+  print "result is correct"
+else
+  print "something went wrong"
+end if

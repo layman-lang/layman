@@ -1,0 +1,11 @@
+# description: strict syntax check for function calls
+# expected_error: C-style function calls like 'obj.method()' are not allowed
+
+define class Counter that has
+  property count which is Number
+
+the variable c of type Counter is a new Counter with
+  count is 0
+
+# This should fail with a specific error message
+c.increment()

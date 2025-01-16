@@ -1,0 +1,16 @@
+# test case Functional 002
+# description: Test higher-order functions (map/filter style)
+
+define function map that takes list, func
+  the variable result is call function create_list
+  for each item in list do
+    call function add on result with call function func with item
+  return result
+
+define function double that takes x
+  return x times 2
+
+the variable numbers is call function create_list with 1, 2, 3, 4, 5
+the variable doubled is call function map with numbers, double
+
+print doubled

@@ -1,0 +1,38 @@
+# test case 50
+# description: When the user attempts to divide by 0, the program should catch the ArithmeticException and display a friendly error message indicating that division by 0 is not allowed, rather than crashing with an unhelpful exception.
+
+define function get_numbers_from_user that takes dummy as Number and returns Number
+  # simulate getting numbers from user
+  return 5
+
+define function add_numbers_together that takes a as Number and b as Number and returns Number
+  return a plus b
+
+define function calculate_division_result that takes numerator as Number and denominator as Number and returns Number
+  try
+    the variable result of type Number is numerator divided by denominator
+    return result
+  catch error
+    print "error message: " + error
+    return 0
+  end try
+
+# test division by 0 handling
+the variable numerator of type Number is 10
+the variable denominator of type Number is 0
+
+the variable division_result of type Number is call function calculate_division_result with argument numerator and argument denominator
+
+if division_result is 0 then
+  print "division by 0 was caught and handled"
+else
+  print "division result:"
+  print the variable division_result
+end if
+
+# test normal division
+the variable normal_denominator of type Number is 2
+the variable normal_result of type Number is call function calculate_division_result with argument numerator and argument normal_denominator
+
+print "normal division result:"
+print the variable normal_result

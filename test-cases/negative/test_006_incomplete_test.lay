@@ -1,0 +1,6 @@
+# negative test: incomplete test statement
+# expected: error should be thrown
+
+test 'my test'
+
+

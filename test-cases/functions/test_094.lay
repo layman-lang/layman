@@ -1,0 +1,43 @@
+# test case 94
+# description: Test Case Description:
+
+# Write an async function that retrieves data from a mock API and waits for its response before performing additional operations, demonstrating proper handling of asynchronous code and awaiting resolution. The test should verify that the function correctly handles both successful and failed API responses, logging the result accordingly. This test ensures the ability to write clean and efficient async code in the programming language.
+
+define function get_user_data that takes name as String and returns Boolean
+  print "getting user data for:"
+  print the variable name
+  
+  # simulate api response
+  if name is "John" then
+    print "got user data: John has 30 years old"
+    return true
+  else if name is "Jane" then
+    print "got user data: Jane has 25 years old"
+    return true
+  else
+    print "failed to get user data"
+    return false
+  end if
+
+define function process_person that takes person_name as String and returns Void
+  the variable result of type Boolean is call function get_user_data with argument person_name
+  
+  if result is true then
+    print "person added to favorites"
+  else
+    print "person not added to favorites"
+  end if
+  
+  return nothing
+
+# simulate processing people list
+the variable person_one of type String is "John"
+call function process_person with argument person_one
+
+the variable person_two of type String is "Jane"
+call function process_person with argument person_two
+
+the variable person_three of type String is "Bob"
+call function process_person with argument person_three
+
+print "processing completed"

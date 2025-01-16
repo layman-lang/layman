@@ -1,0 +1,45 @@
+# Test Null Safety
+
+# 1. Declare maybe type
+the variable x of type maybe Number is nothing
+
+# 2. Check existence (should be false)
+if x exists then
+    print "x exists (fail)"
+else
+    print "x does not exist (pass)"
+end if
+
+# 3. Assign value
+set x to 42
+
+# 4. Check existence (should be true)
+if x exists then
+    print "x exists (pass)"
+else
+    print "x does not exist (fail)"
+end if
+
+# 5. Declare with value
+the variable y of type maybe String is "Hello"
+
+if y exists then
+    print "y exists (pass)"
+end if
+
+# 6. Assign nothing
+set y to nothing
+
+if y exists then
+    print "y exists (fail)"
+else
+    print "y is nothing (pass)"
+end if
+
+# 7. Nested maybe (Maybe<Maybe<Number>>)
+# Not explicitly supported by syntax "maybe maybe Number" but "maybe Number" covers it?
+# "maybe Number" means Number | Nothing.
+# "maybe maybe Number" would be (Number | Nothing) | Nothing, which collapses to Number | Nothing.
+# So we don't need to test nested maybe specifically unless we have distinct Nothing levels.
+
+print "Null Safety Test Complete"

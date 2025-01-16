@@ -1,0 +1,8 @@
+# negative test: return statement in wrong context (not in function)
+# expected: parser or type checker should catch this
+
+if true then
+  return 5
+end if
+
+

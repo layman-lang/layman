@@ -1,0 +1,18 @@
+# Test struct definition and instantiation
+
+struct Point with
+    x as Number,
+    y as Number
+
+the variable p of type Point is a new Point with
+    x is 10,
+    y is 20
+
+print p.x
+print p.y
+
+if p.x is 10 and p.y is 20 then
+    print "Struct test passed"
+else
+    print "Struct test failed"
+end if

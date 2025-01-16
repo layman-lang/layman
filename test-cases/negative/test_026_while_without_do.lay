@@ -1,0 +1,7 @@
+# negative test: while without 'do' keyword
+# expected: error should be thrown
+
+while true
+  print 'loop'
+
+

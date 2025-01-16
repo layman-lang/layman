@@ -1,0 +1,6 @@
+# negative test: using undefined variable
+# expected: type checker should catch this
+
+the variable result of type Number is undefined_var plus 5
+
+

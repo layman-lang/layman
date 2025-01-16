@@ -1,0 +1,6 @@
+# negative test: function call to undefined function
+# expected: error should be thrown
+
+call undefined_function
+
+

@@ -1,0 +1,6 @@
+# negative test: list without proper separators
+# expected: parser should reject this
+
+the variable list of type List of Number is 6
+
+

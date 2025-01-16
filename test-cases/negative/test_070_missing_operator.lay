@@ -1,0 +1,6 @@
+# negative test: missing operator between values
+# expected: parser should reject this
+
+the variable x of type Number is 15
+
+

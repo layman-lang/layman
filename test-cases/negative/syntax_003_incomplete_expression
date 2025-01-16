@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/syntax_003_incomplete_expression.js

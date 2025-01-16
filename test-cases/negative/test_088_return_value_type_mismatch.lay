@@ -1,0 +1,7 @@
+# negative test: return value doesn't match function return type
+# expected: type checker should catch this
+
+define function getNumber that takes nothing and returns Number
+  return 'not a number'
+
+

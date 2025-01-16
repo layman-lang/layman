@@ -1,0 +1,8 @@
+# negative test: if condition with non-boolean value
+# expected: type checker should catch this
+
+if 5 then
+  print 'hello'
+end if
+
+

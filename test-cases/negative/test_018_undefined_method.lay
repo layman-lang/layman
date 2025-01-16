@@ -1,0 +1,8 @@
+# negative test: method call on undefined method
+# expected: error should be thrown
+
+the variable person of type Person is a new Person with
+  name is 'Alice'
+call person dot nonexistent_method
+
+

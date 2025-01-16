@@ -1,0 +1,6 @@
+# negative test: invalid relative import path
+# expected: resolver should catch this
+
+import utils from '../../../nonexistent/path/utils.lay'
+
+

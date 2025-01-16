@@ -1,0 +1,12 @@
+# test case 163
+# description: Regression test for 'end while' followed immediately by 'define function'.
+
+the variable x of type Number is 0
+while x is less than 5 do
+  the variable x of type Number is x plus 1
+end while
+
+define function test_func that takes y as Number and returns Number
+  return y
+
+print "done"

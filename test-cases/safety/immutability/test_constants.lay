@@ -1,0 +1,13 @@
+print "--- Test Constants ---"
+
+the constant pi is 3.14159
+print "Pi is: " plus pi
+
+the variable count is 0
+print "Count is: " plus count
+set count to 1
+print "Count is now: " plus count
+
+print "--- Testing Reassignment Error ---"
+# This should fail
+call expect_compilation_error with 'test-cases/negative/reassign_const.lay', "Cannot reassign constant 'pi'"

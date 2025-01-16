@@ -1,0 +1,38 @@
+# test case 58
+# description: The layman programming language test case number 58 "Login Success" requires that a user submits their credentials to successfully log into a website, ensuring that the system authenticates and authorizes access correctly. The test should verify that a valid username and password combination results in a successful login response without any errors or prompts for additional verification.
+
+define function authenticate that takes username as String and password as String and returns Bool
+  # simulate authentication check
+  if username is "user" and password is "password" then
+    return true
+  else
+    return false
+  end if
+
+define function authorize that takes username as String and role as String and returns Bool
+  # simulate authorization check
+  if role is "admin" then
+    return true
+  else if role is "moderator" then
+    return true
+  else
+    return true
+  end if
+
+# test login with valid credentials
+the variable username of type String is "user"
+the variable password of type String is "password"
+the variable role of type String is "admin"
+
+the variable auth_result of type Bool is call function authenticate with argument username and argument password
+
+if auth_result is true then
+  the variable authz_result of type Bool is call function authorize with argument username and argument role
+  if authz_result is true then
+    print "logged in successfully"
+  else
+    print "authorization failed"
+  end if
+else
+  print "username or password incorrect"
+end if

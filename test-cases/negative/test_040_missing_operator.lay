@@ -1,0 +1,6 @@
+# negative test: missing operator between values
+# expected: error should be thrown
+
+the variable x of type Number is 8
+
+

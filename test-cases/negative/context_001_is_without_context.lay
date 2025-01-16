@@ -1,0 +1,7 @@
+# negative test case: 'is' without proper context
+# expected error: 'is' keyword used without valid context
+# description: Tests context-aware 'is' keyword validation
+
+x is
+
+

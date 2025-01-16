@@ -1,0 +1,4 @@
+product_a is now a child of new_product
+product_b is now a child of new_product
+all descendants are correctly labeled
+pass

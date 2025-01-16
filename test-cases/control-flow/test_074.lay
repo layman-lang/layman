@@ -1,0 +1,37 @@
+# test case 74
+# description: Here is a test case description for test case number 74:
+
+# Write an asynchronous function that retrieves data from a mock API and logs each step of the process to the console, including when the request is sent and when it receives a response. Then, verify that the logged messages include specific text and do not contain any errors or exceptions.
+
+define function get_data_from_api that takes dummy as Number and returns Number
+  print "starting to retrieve data"
+  
+  # simulate retrieving items
+  the variable item_one of type Number is 1
+  the variable item_two of type Number is 2
+  
+  # process each item
+  the variable request_one of type Number is item_one
+  print "requesting"
+  print the variable request_one
+  
+  the variable response_one of type Number is request_one plus 10
+  print "receiving response"
+  
+  if response_one is greater than 0 then
+    print "response was successful"
+    print "processing data"
+  else
+    print "error occurred"
+    print "handling error"
+  end if
+  
+  print "finished retrieving data"
+  return response_one
+
+# test async data retrieval
+the variable dummy_value of type Number is 0
+the variable api_result of type Number is call function get_data_from_api with argument dummy_value
+
+print "api call completed"
+print the variable api_result

@@ -1,0 +1,29 @@
+# test case 20
+# description: A program should take 2 numbers as input, add 1 number to another and then subtract a small value from the sum. The result of this operation should be compared to the original first number to verify that the addition was performed correctly. If the result is less than or equal to the original number, the test passes.
+
+define function add_numbers that takes number_one as Number and number_two as Number and returns Number
+  return number_one plus number_two
+
+define function subtract_small_value that takes sum as Number and returns Number
+  the variable small_value of type Number is 1
+  return sum minus small_value
+
+# test with 2 numbers
+the variable number_one of type Number is 5
+the variable number_two of type Number is 10
+
+# add the numbers
+the variable sum of type Number is call function add_numbers with argument number_one and argument number_two
+
+# subtract a small value from the sum
+the variable result of type Number is call function subtract_small_value with argument sum
+
+# compare result to original first number
+if result is less than or equal to number_one then
+  print "pass"
+else
+  print "fail"
+end if
+
+print the variable result
+print the variable number_one

@@ -1,0 +1,57 @@
+describe 'negative tests expected failures'
+  test 'incomplete throw'
+    call expect_compilation_error with 'test-cases/negative/test_001_incomplete_throw.lay' and 'throw statement requires an expression'
+  end test
+
+  test 'incomplete test statement'
+    call expect_compilation_error with 'test-cases/negative/test_006_incomplete_test.lay' and 'test statement requires a body'
+  end test
+
+  test 'incomplete describe statement'
+    call expect_compilation_error with 'test-cases/negative/test_007_incomplete_describe.lay' and 'describe statement requires a body'
+  end test
+
+  test 'invalid import syntax'
+    call expect_compilation_error with 'test-cases/negative/test_011_invalid_import_syntax.lay' and 'import statement requires a module name or path'
+  end test
+
+  test 'nested error handling runtime'
+    call expect_runtime_error_from with 'test-cases/negative/test_033_nested_error_handling.lay' and 'outer error'
+  end test
+
+  test 'expect error incomplete runtime'
+    call expect_runtime_error_from with 'test-cases/negative/test_034_expect_error_incomplete.lay' and 'error'
+  end test
+
+  test 'expect error without message runtime'
+    call expect_runtime_error_from with 'test-cases/negative/test_035_expect_error_without_message.lay' and 'error'
+  end test
+
+  test 'test framework negative compile'
+    call expect_compilation_error with 'test-cases/negative/test_050_test_framework_negative.lay' and 'describe statement requires a suite name'
+  end test
+
+  test 'missing expression after throw'
+    call expect_compilation_error with 'test-cases/negative/test_051_missing_expression_after_throw.lay' and 'throw statement requires an expression'
+  end test
+
+  test 'call without function name runtime'
+    call expect_runtime_error_from with 'test-cases/negative/test_058_call_without_function_name.lay'
+  end test
+
+  test 'expect error wrong syntax runtime'
+    call expect_runtime_error_from with 'test-cases/negative/test_113_expect_error_wrong_syntax.lay' and 'error'
+  end test
+
+  test 'nested expect error runtime'
+    call expect_runtime_error_from with 'test-cases/negative/test_114_nested_expect_error.lay' and 'nested'
+  end test
+
+  test 'conditional without boolean compile'
+    call expect_compilation_error with 'test-cases/negative/test_130_conditional_without_boolean.lay' and 'condition in if statement must be boolean'
+  end test
+
+  test 'expect invalid actual compile'
+    call expect_compilation_error with 'test-cases/negative/test_140_expect_invalid_actual.lay' and "expect statement requires 'is' keyword"
+  end test
+end describe

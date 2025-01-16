@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/runtime_005_null_reference.js

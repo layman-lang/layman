@@ -1,0 +1,29 @@
+# test case 49
+# description: The test case, number 49, "Pattern Matching with String Literal", involves writing a program that uses pattern matching to extract specific information from a string literal. The program should correctly identify and return a specific value if a certain condition is met within the string, and fail otherwise.
+
+define function is_adult that takes age as Number and name as String and returns Bool
+  if age is 35 then
+    return true
+  else
+    return false
+  end if
+
+# test pattern matching with string literal
+the variable name of type String is "john"
+the variable age of type Number is 35
+
+# check if name matches pattern and age condition
+if name is "john" then
+  if age is 35 then
+    the variable is_adult_result of type Bool is call function is_adult with argument age and argument name
+    if is_adult_result is true then
+      print "pattern matched: john is adult"
+    else
+      print "pattern matched but not adult"
+    end if
+  else
+    print "name matched but age condition failed"
+  end if
+else
+  print "pattern matching failed"
+end if

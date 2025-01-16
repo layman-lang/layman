@@ -1,0 +1,9 @@
+# negative test: describe without end describe
+# expected: error should be thrown
+
+describe 'my suite'
+  test 'test 1'
+    print 'test'
+  end test
+
+

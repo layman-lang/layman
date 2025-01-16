@@ -1,0 +1,7 @@
+# negative test: class property declaration without type
+# expected: parser should reject this
+
+define class Person
+  the property name
+
+

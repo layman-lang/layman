@@ -1,0 +1,5 @@
+print 'Hello, World!'
+
+name is 'Layman'
+greeting is 'Hello, ' plus name
+print greeting

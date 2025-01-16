@@ -1,0 +1,22 @@
+# test case 11
+# description: select a module and execute a simple operation to verify integration
+
+define class Module that has property name which is Text
+
+define function select_module that takes name as String and returns String
+  if name is "math" then
+    return "math"
+  else
+    return "unknown"
+  end if
+
+# create a module instance
+ the variable mod of type Module is a new Module with name which is "math"
+
+# use the chosen module to run a simple computation
+ if mod.name is "math" then
+   the variable result of type Number is 3 plus 2
+   print result
+ else
+   print "module not found"
+ end if

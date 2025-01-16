@@ -1,0 +1,5 @@
+number can be expressed as 2^n + i
+input number:
+5
+result:
+true

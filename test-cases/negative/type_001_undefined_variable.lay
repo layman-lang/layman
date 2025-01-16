@@ -1,0 +1,7 @@
+# negative test case: undefined variable usage
+# expected error: Variable 'undefined_var' is not defined
+# description: Tests that undefined variables are caught
+
+print the variable undefined_var
+
+

@@ -1,0 +1,12 @@
+print "--- Test Standard Math Library ---"
+
+# Import from standard library (should be found in std/)
+import math as math
+
+print "PI is: " plus math.PI
+print "E is: " plus math.E
+
+print "Square of 5 is: " plus call function math.square with 5
+print "Cube of 3 is: " plus call function math.cube with 3
+print "Abs of -10 is: " plus call function math.abs with -10
+print "Max of 10 and 20 is: " plus call function math.max with 10, 20

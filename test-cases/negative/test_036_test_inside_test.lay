@@ -1,0 +1,10 @@
+# negative test: test inside test (nested)
+# expected: should handle or error
+
+test 'outer test'
+  test 'inner test'
+    expect 5 is 5
+  end test
+end test
+
+

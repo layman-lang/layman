@@ -1,0 +1,39 @@
+# test case 32
+# description: The test case will exercise the pipeline operation functionality by creating 2 pipelines, 1 that filters and sorts an array of numbers, and another that logs and aggregates errors in a specific scenario. The test will then verify that the output of both pipelines is correct and as expected.
+
+define function filter_even that takes number as Number and returns Bool
+  the variable remainder of type Number is number modulo 2
+  if remainder is 0 then
+    return true
+  else
+    return false
+  end if
+
+define function process_number that takes number as Number and returns Number
+  # simulate filtering and sorting pipeline
+  the variable is_even of type Bool is call function filter_even with argument number
+  if is_even is true then
+    return number
+  else
+    return 0
+  end if
+
+# test pipeline with numbers
+the variable number_one of type Number is 1
+the variable number_two of type Number is 2
+the variable number_three of type Number is 3
+the variable number_four of type Number is 4
+the variable number_five of type Number is 5
+
+# process each number through pipeline
+the variable result_one of type Number is call function process_number with argument number_one
+the variable result_two of type Number is call function process_number with argument number_two
+the variable result_three of type Number is call function process_number with argument number_three
+the variable result_four of type Number is call function process_number with argument number_four
+the variable result_five of type Number is call function process_number with argument number_five
+
+# aggregate results
+the variable total of type Number is result_one plus result_two plus result_three plus result_four plus result_five
+
+print "pipeline processing completed"
+print the variable total

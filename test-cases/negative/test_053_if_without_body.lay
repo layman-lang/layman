@@ -1,0 +1,6 @@
+# negative test: if statement without body
+# expected: parser should reject this
+
+if true then
+
+

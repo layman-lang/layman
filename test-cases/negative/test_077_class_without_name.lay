@@ -1,0 +1,7 @@
+# negative test: class declaration without class name
+# expected: parser should reject this
+
+define class
+  the property name of type String
+
+

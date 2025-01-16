@@ -1,0 +1,10 @@
+# negative test: nested expect error (should be invalid)
+# expected: parser should reject this or handle correctly
+
+expect error
+  expect error
+    throw 'nested'
+  with message 'nested'
+with message 'outer'
+
+

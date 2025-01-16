@@ -1,0 +1,18 @@
+print "--- Test Using Statement ---"
+
+define function create_resource
+    the variable res is call function create_dictionary
+    
+    define function close
+        print "Resource closed!"
+    
+    set close in res to close
+    return res
+
+print "Before using block"
+using call function create_resource as res do
+    print "Inside using block"
+    # Verify res exists
+    print "Resource is: " plus res
+    
+print "After using block"

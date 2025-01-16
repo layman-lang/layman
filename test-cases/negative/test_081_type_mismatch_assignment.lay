@@ -1,0 +1,6 @@
+# negative test: assigning wrong type to variable
+# expected: type checker should catch this
+
+the variable x of type Number is 'hello'
+
+

@@ -1,0 +1,5 @@
+print 'Hello, World!'
+
+the variable name of type String is 'Layman'
+the variable greeting of type String is call function concatenate with argument 'Hello, ' and argument name
+print greeting

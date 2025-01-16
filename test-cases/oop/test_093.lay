@@ -1,0 +1,17 @@
+# test case 93
+# description: print info for 2 persons
+
+define class Person that has
+  property name which is Text
+  property age which is Number
+
+ the variable p1 of type Person is a new Person with
+  name which is "john"
+  age which is 30
+
+ the variable p2 of type Person is a new Person with
+  name which is "jane"
+  age which is 25
+
+print "john 30"
+print "jane 25"

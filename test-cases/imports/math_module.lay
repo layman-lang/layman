@@ -1,0 +1,15 @@
+# math module for testing imports
+define function calculate_area that takes length as Number and width as Number and returns Number
+  return length times width
+
+define function get_square_root that takes number as Number and returns Number
+  # simulate square root calculation
+  if number is 1 then
+    return 1
+  else if number is 4 then
+    return 2
+  else if number is 9 then
+    return 3
+  else
+    return number
+  end if

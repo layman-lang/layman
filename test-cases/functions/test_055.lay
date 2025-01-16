@@ -1,0 +1,26 @@
+# test case 55
+# description: The test case should calculate the total cost of renting an apartment for a month after applying a discount of $200 on a monthly rent of $1200 and a security deposit of $500, and verify that the total comes out to be $1500.
+
+define function calculate_total that takes monthly_rent as Number and security_deposit as Number and returns Number
+  # apply discount of $200
+  the variable discount of type Number is 200
+  the variable rent_after_discount of type Number is monthly_rent minus discount
+  # add security deposit
+  the variable total_cost of type Number is rent_after_discount plus security_deposit
+  return total_cost
+
+# calculate total cost
+the variable monthly_rent of type Number is 1200
+the variable security_deposit of type Number is 500
+
+the variable total_cost of type Number is call function calculate_total with argument monthly_rent and argument security_deposit
+
+# verify total is $1500 (1200 - 200 + 500 = 1500)
+the variable expected_total of type Number is 1500
+if total_cost is expected_total then
+  print "total cost is correct:"
+  print the variable total_cost
+else
+  print "total cost calculation error"
+  print the variable total_cost
+end if

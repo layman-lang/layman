@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/expression_001_missing_operand.js

@@ -1,0 +1,12 @@
+source value:
+5
+transform value:
+10
+sink value:
+20
+result one:
+11
+result two:
+12
+result three:
+13

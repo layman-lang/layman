@@ -1,0 +1,17 @@
+# test case 161
+# description: Verify dictionary creation, item access, and empty dictionary printing.
+
+test "dictionary creation and access"
+    the variable user is a dictionary containing "name" is "Alice", "age" is "30"
+    
+    # Note: values must be same type for now due to strict type checking
+    # So "age" is "30" (string) instead of 30 (number)
+    
+    expect item "name" of user is "Alice"
+    expect item "age" of user is "30"
+end test
+
+test "empty dictionary"
+    the variable empty is a dictionary
+    print empty
+end test

@@ -1,0 +1,6 @@
+# negative test: throw without expression
+# expected: parser should reject this
+
+throw
+
+

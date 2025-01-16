@@ -1,0 +1,6 @@
+# negative test: expect statement without 'is' keyword
+# expected: parser should reject this
+
+expect 10
+
+

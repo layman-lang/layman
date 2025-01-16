@@ -1,0 +1,8 @@
+# negative test: try without catch block
+# expected: should handle or warn
+
+try
+  throw 'error'
+end try
+
+

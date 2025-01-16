@@ -1,0 +1,33 @@
+# test case 4
+# description: A program with 2 functions, 'greet' and 'add', is tested by calling these functions from the main program and checking that they produce the expected results when given valid inputs; specifically, that 'greet' returns a personalized message for a given name and that 'add' correctly sums 2 numbers.
+
+define function greet that takes name as String and returns String
+  the variable greeting of type String is "Hello, my name is "
+  the variable result of type String is call function concatenate with argument greeting and argument name
+  return result
+
+define function add that takes first as Number and second as Number and returns Number
+  return first plus second
+
+# test the functions
+the variable person_one of type String is "John"
+the variable person_two of type String is "Jane"
+
+# test greet function
+the variable greeting_one of type String is call function greet with argument person_one
+print the variable greeting_one
+
+the variable greeting_two of type String is call function greet with argument person_two
+print the variable greeting_two
+
+# test add function
+the variable count_one of type Number is 2
+the variable count_two of type Number is 3
+the variable total of type Number is call function add with argument count_one and argument count_two
+
+if total is 5 then
+  print "add function works correctly"
+  print the variable total
+else
+  print "add function failed"
+end if

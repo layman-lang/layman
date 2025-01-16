@@ -1,0 +1,6 @@
+# negative test: variable declaration missing 'type' keyword
+# expected: parser should reject this
+
+the variable x of String is 'hello'
+
+

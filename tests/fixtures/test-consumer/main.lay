@@ -1,0 +1,4 @@
+import "hello-layman/main"
+
+call say_hello
+print "Imported successfully"

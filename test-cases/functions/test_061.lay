@@ -1,0 +1,28 @@
+# test case 61
+# description: The test case "Simple Variable Declaration and Assignment" will demonstrate the ability to declare a variable with an initial value, assign a new value to it, and verify that these assignments are reflected in the program output. The test involves creating a simple variable declaration, assigning values to it using different assignment operators, and checking for correct results.
+
+# declare variable with initial value
+the variable name of type Number is 5
+
+# declare and assign another variable
+the variable age of type Number is 20
+
+# perform arithmetic operations on age
+the variable age of type Number is age plus 1
+the variable age of type Number is age times 2
+the variable age of type Number is age minus 3
+
+# test conditional based on age
+if age is greater than 30 then
+  print "old"
+else
+  print "young"
+end if
+
+# test variable operations
+the variable age_divided of type Number is age divided by 2
+print "age divided by 2:"
+print the variable age_divided
+
+print "final age value:"
+print the variable age

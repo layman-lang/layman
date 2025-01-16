@@ -1,0 +1,42 @@
+# test case 89
+# description: The programmer is expected to write a function that takes an integer as input and returns true if it can be expressed as 2^n + i, where n is an integer and i is either 0 or 1, and false otherwise. This test case will verify the functionality of pattern matching in handling cases where the input can be expressed in this form.
+
+define function can_be_expressed_as_power that takes input_number as Number and returns Boolean
+  # check if number can be expressed as 2^n + i where i is 0 or 1
+  the variable power_base of type Number is 2
+  the variable test_n of type Number is 0
+  
+  # test with n=0: 2^0 + 0 = 1, 2^0 + 1 = 2
+  the variable power_zero of type Number is 1
+  if input_number is power_zero or input_number is 2 then
+    return true
+  end if
+  
+  # test with n=1: 2^1 + 0 = 2, 2^1 + 1 = 3
+  the variable power_one of type Number is 2
+  if input_number is power_one or input_number is 3 then
+    return true
+  end if
+  
+  # test with n=2: 2^2 + 0 = 4, 2^2 + 1 = 5
+  the variable power_two of type Number is 4
+  if input_number is power_two or input_number is 5 then
+    return true
+  end if
+  
+  return false
+
+# test with input 5
+the variable input_number of type Number is 5
+the variable result of type Boolean is call function can_be_expressed_as_power with argument input_number
+
+if result is true then
+  print "number can be expressed as 2^n + i"
+else
+  print "number cannot be expressed as 2^n + i"
+end if
+
+print "input number:"
+print the variable input_number
+print "result:"
+print the variable result

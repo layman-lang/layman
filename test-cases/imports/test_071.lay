@@ -1,0 +1,36 @@
+# test case 71
+# description: Write a program that imports a math module and uses its functions to calculate the area of a rectangle, testing that the result is correct when both the length and width are provided.
+
+import math_module
+
+# test with different length and width values
+the variable length of type Number is 2
+the variable width of type Number is 3
+
+# calculate area
+the variable area_result of type Number is call function calculate_area with argument length and argument width
+
+print "area of rectangle:"
+print the variable area_result
+
+# test with different values
+the variable length_two of type Number is 3
+the variable width_two of type Number is 4
+
+the variable area_result_two of type Number is call function calculate_area with argument length_two and argument width_two
+
+print "area of rectangle 2:"
+print the variable area_result_two
+
+# test with length = 1
+the variable length_three of type Number is 1
+the variable width_three of type Number is 5
+
+the variable area_result_three of type Number is call function calculate_area with argument length_three and argument width_three
+
+if area_result_three is greater than 0 then
+  print "area calculation successful:"
+  print the variable area_result_three
+else
+  print "an error message"
+end if

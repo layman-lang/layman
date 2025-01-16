@@ -1,0 +1,6 @@
+# negative test: invalid type annotation
+# expected: error should be thrown
+
+the variable x of type InvalidType is 5
+
+

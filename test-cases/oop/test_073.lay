@@ -1,0 +1,24 @@
+# test case 73
+# description: validate simple object usage and conditional printing
+
+define class Person that has
+  property name which is Text
+  property age which is Number
+  property address which is Text
+
+# create a person object
+ the variable person of type Person is a new Person with
+  name which is "john"
+  age which is 30
+  address which is "new york"
+
+# basic conditional flow
+ if "new york" is "new york" then
+  print "address is correct"
+ else
+  print "address is incorrect"
+ end if
+
+# simple loop and prints
+ the variable result of type Number is 8
+ print the variable result

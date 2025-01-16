@@ -1,0 +1,8 @@
+# negative test: while condition with non-boolean
+# expected: type checker should catch this
+
+while 5 do
+  print 'hello'
+end while
+
+

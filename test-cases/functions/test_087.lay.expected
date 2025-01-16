@@ -1,0 +1,8 @@
+original string:
+aabbcc
+processed string:
+abc
+original string:
+aaabbbccc
+processed string:
+abc

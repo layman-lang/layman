@@ -1,0 +1,32 @@
+# test case 57
+# description: Test Case 57: Validate Data Processing of Multiple Entries
+
+# The system should process a list of employee names and ages correctly, handling duplicate entries by only displaying each name once while storing both the original and updated age. The system must prevent overwriting existing information when updating an entry with the same name as another in the list.
+
+define function process_employee that takes name as String and age as Number and returns Void
+  # simulate checking for duplicates
+  the variable employee_name_one of type String is "John"
+  the variable employee_name_two of type String is "Jane"
+  
+  if name is employee_name_one then
+    print "name is already in list and previous age was stored"
+  else if name is employee_name_two then
+    print "name is already in list and previous age was stored"
+  else
+    print "new name added to list"
+  end if
+  
+  return nothing
+
+# test employee processing
+the variable employee_name of type String is "John"
+the variable employee_age of type Number is 30
+the variable employee_name_two of type String is "Jane"
+the variable employee_age_two of type Number is 25
+
+call function process_employee with argument employee_name and argument employee_age
+
+# test with another employee
+call function process_employee with argument employee_name_two and argument employee_age_two
+
+print "employee processing completed"

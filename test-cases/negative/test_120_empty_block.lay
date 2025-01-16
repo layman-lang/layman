@@ -1,0 +1,10 @@
+# negative test: empty block statements
+# expected: parser should handle this gracefully
+
+if true then
+end if
+
+for each item in list do
+end for
+
+

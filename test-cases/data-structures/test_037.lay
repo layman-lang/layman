@@ -1,0 +1,26 @@
+# test case 37
+# description: Test Case 37: Find the Maximum Number in a List.
+
+define function find_max that takes input_list as List of Number and returns Number
+  the variable max_val of type Number is 0
+  # Initialize max with first element if possible, or just 0 assuming positive numbers
+  # Since we can't easily get first element without index (unless we iterate), let's assume 0 is min.
+  
+  for each n in input_list do
+    if n is greater than max_val then
+      the variable max_val of type Number is n
+    end if
+  end for
+  
+  return max_val
+
+# test with a list of numbers
+the variable numbers of type List of Number is a list containing 10, 50, 25, 5, 100
+
+# find the max number
+the variable max_number of type Number is call function find_max with argument numbers
+
+print "list:"
+print numbers
+print "max number:"
+print max_number

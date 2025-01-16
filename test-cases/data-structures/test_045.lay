@@ -1,0 +1,28 @@
+# test case 45
+# description: Test Case 45: Verify that we can filter out even numbers from a list of integers.
+
+define function filter_odds that takes input_list as List of Number and returns List of Number
+  the variable result_list of type List of Number is an empty list
+  
+  for each n in input_list do
+    the variable remainder of type Number is n modulo 2
+    if remainder is not 0 then
+      call add on result_list with n
+    end if
+  end for
+  
+  return result_list
+
+# simulate a list of numbers: 1, 2, 3, 4, 5
+the variable numbers of type List of Number is a list containing 1, 2, 3, 4, 5
+
+# filter out even numbers (keep odd numbers)
+the variable odd_numbers of type List of Number is call function filter_odds with argument numbers
+
+# verify filtered list (odd numbers: 1, 3, 5)
+print "original list:"
+print numbers
+print "odd numbers:"
+print odd_numbers
+print "count:"
+print odd_numbers.size

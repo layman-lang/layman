@@ -1,0 +1,7 @@
+# negative test: invalid type conversion
+# expected: type checker should catch this
+
+the variable x of type String is 'hello'
+the variable y of type Number is convert x to Number
+
+

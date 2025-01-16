@@ -1,0 +1,9 @@
+# negative test: function called with too many arguments
+# expected: type checker should catch this
+
+define function identity that takes x and returns Number
+  return x
+
+the variable result of type Number is call identity with 5 and 10
+
+

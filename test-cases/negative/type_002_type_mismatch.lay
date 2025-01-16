@@ -1,0 +1,7 @@
+# negative test case: type mismatch
+# expected error: Type mismatch - cannot assign String to Number
+# description: Tests that type checking catches mismatches
+
+the variable x of type Number is 'hello'
+
+

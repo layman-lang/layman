@@ -1,0 +1,25 @@
+# test case 25
+# description: Test Case 25: List Operations and Filtering
+
+# Create a list of numbers between 10 and 20 (inclusive)
+the variable numbers of type List of Number is a list containing 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+# Filter numbers divisible by both 2 and 5 (i.e., divisible by 10)
+the variable divisible_numbers of type List of Number is an empty list
+
+for each n in numbers do
+    if n modulo 10 is 0 then
+        divisible_numbers.add(n)
+    end if
+end for
+
+# Filter even numbers from the divisible numbers
+the variable even_numbers of type List of Number is an empty list
+
+for each n in divisible_numbers do
+    if n modulo 2 is 0 then
+        even_numbers.add(n)
+    end if
+end for
+
+print even_numbers

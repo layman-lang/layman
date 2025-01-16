@@ -1,0 +1,10 @@
+# negative test: comparing incompatible types
+# expected: type checker should catch this
+
+the variable x of type String is 'hello'
+the variable y of type Number is 5
+if x is y then
+  print 'match'
+end if
+
+

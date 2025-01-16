@@ -1,0 +1,6 @@
+# negative test: return statement outside function
+# expected: parser should reject this or type checker should catch this
+
+return 5
+
+

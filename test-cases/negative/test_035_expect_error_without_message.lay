@@ -1,0 +1,8 @@
+# negative test: expect error without message value
+# expected: error should be thrown during execution
+# this test should compile but fail at runtime when message is missing
+
+expect error
+  throw 'error'
+with message
+# missing message value

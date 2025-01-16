@@ -1,0 +1,7 @@
+# negative test: while without condition
+# expected: error should be thrown
+
+while do
+  print 'loop'
+
+

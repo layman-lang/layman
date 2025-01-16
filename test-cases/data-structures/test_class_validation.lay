@@ -1,0 +1,17 @@
+# Test class validation
+define class Person that has
+  property name which is String
+  property age which is Number
+  
+  define function greet returns String
+    return "Hello"
+  
+  define function get_age returns Number
+    return 30
+
+the variable p is a new Person with
+  name is "Alice"
+  age is 30
+
+print call greet on p
+print call get_age on p

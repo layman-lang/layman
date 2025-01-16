@@ -1,0 +1,34 @@
+# test case 44
+# description: Test Case 44: A simple calculator program should define 2 functions to add and multiply numbers, then call these functions with different inputs to demonstrate that the output is correct, verifying the basic functionality of the program.
+
+define function add_numbers that takes x as Number and y as Number and returns Number
+  return x plus y
+
+define function multiply_numbers that takes x as Number and y as Number and returns Number
+  return x times y
+
+# test the functions
+the variable x of type Number is 5
+the variable y of type Number is 3
+
+# call add function
+the variable z of type Number is call function add_numbers with argument x and argument y
+
+# call multiply function
+the variable w of type Number is call function multiply_numbers with argument x and argument y
+
+# verify results
+if z is 8 then
+  print "the sum of x and y is correct"
+else
+  print "the sum of x and y is incorrect"
+end if
+
+if w is 15 then
+  print "the product of x and y is correct"
+else
+  print "the product of x and y is incorrect"
+end if
+
+print the variable z
+print the variable w

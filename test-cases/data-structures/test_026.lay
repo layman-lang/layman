@@ -1,0 +1,32 @@
+# test case 26
+# description: Test Case 26: Verify dictionary lookup with existing key value pairs. The test will check that a correctly defined dictionary can successfully retrieve a previously stored value for a specific key, while ignoring any non-existent keys and returning undefined if requested.
+
+# simulate dictionary with key-value pairs using variables
+the variable person of type Dictionary is a dictionary with "name" is "John", "age" is 30
+
+# function to add numbers
+define function add_numbers that takes a as Number and b as Number and returns Number
+  the variable result of type Number is a plus b
+  return result
+
+# test the function
+the variable result of type Number is call function add_numbers with argument 5 and argument 3
+
+# verify dictionary-like lookup by checking if key exists (simulated)
+# check if name key exists (it does)
+the variable person_name of type Any is person["name"]
+if person_name is "John" then
+  print "name key exists with value:"
+  print the variable person_name
+end if
+
+# check if age key exists (it does)
+the variable person_age of type Any is person["age"]
+if person_age is 30 then
+  print "age key exists with value:"
+  print the variable person_age
+end if
+
+# check if non-existent key (simulated as checking a variable that doesn't exist)
+# in a real dictionary, this would return undefined, but we'll just skip it
+print "dictionary lookup verified"

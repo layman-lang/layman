@@ -1,0 +1,7 @@
+# negative test: test statement without end test
+# expected: parser should reject this
+
+test 'my test'
+  expect 5 is 5
+
+

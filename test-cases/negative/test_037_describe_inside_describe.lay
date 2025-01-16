@@ -1,0 +1,12 @@
+# negative test: describe inside describe (nested)
+# expected: should handle or error
+
+describe 'outer suite'
+  describe 'inner suite'
+    test 'test'
+      expect 5 is 5
+    end test
+  end describe
+end describe
+
+

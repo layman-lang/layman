@@ -1,0 +1,9 @@
+# negative test: loop variable type doesn't match collection
+# expected: type checker should catch this
+
+the variable numbers of type List of Number is 1 and 2 and 3
+for each item of type String in numbers do
+  print item
+end for
+
+

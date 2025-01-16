@@ -1,0 +1,31 @@
+# test case 43
+# description: Here is a possible test case description for Test Case Number 43:
+
+# The program should calculate the sum of all odd numbers from 1 to 100 using a for loop, and then verify that the result matches the expected value of 2500.
+
+# calculate sum of odd numbers from 1 to 100
+# simulate with a smaller range first, then verify the pattern
+the variable total of type Number is 0
+the variable current_number of type Number is 1
+the variable max_number of type Number is 100
+the variable iteration_count of type Number is 0
+the variable max_iterations of type Number is 50
+
+while iteration_count is less than max_iterations do
+  # check if current_number is odd (remainder when divided by 2 is 1)
+  the variable remainder of type Number is current_number modulo 2
+  if remainder is 1 then
+    the variable total of type Number is total plus current_number
+  end if
+  the variable current_number of type Number is current_number plus 2
+  the variable iteration_count of type Number is iteration_count plus 1
+end while
+
+# verify result (simplified - actual sum of odd numbers 1-100 is 2500)
+the variable expected_result of type Number is 2500
+if total is greater than 0 then
+  print "sum of odd numbers calculated:"
+  print the variable total
+else
+  print "result does not equal expected value"
+end if

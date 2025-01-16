@@ -1,0 +1,6 @@
+# negative test: calling undefined function
+# expected: type checker should catch this
+
+call undefined_function
+
+

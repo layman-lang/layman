@@ -1,0 +1,18 @@
+# test file for hello.lay
+# demonstrates testing framework usage with imports
+
+# import hello from '../hello.lay'
+
+describe 'hello world tests'
+  test 'hello prints correct message'
+    # call hello
+    # test passes if hello executes without error
+    print "hello world"
+  end test
+  
+  test 'hello prints hello world'
+    the variable result of type String is 'Hello, World!'
+    expect result is 'Hello, World!'
+  end test
+
+end describe

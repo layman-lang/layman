@@ -1,0 +1,31 @@
+# test case 75
+# description: Test Case 75: Calculate the Total Cost of Goods Sold for a Quarter Based on Historical Sales Data - This test case verifies that the financial calculation function correctly determines the total cost of goods sold for a quarter given historical sales data. It should return the expected result when provided with valid input, such as sales revenue and cost of goods sold for each month of a quarter.
+
+# simulate sales revenue for each month
+the variable january_revenue of type Number is 10000
+the variable february_revenue of type Number is 12000
+the variable march_revenue of type Number is 15000
+
+# simulate cost of goods sold for each month
+the variable january_cogs of type Number is 5000
+the variable february_cogs of type Number is 6000
+the variable march_cogs of type Number is 7000
+
+# calculate total cost for each month
+the variable january_total of type Number is january_revenue plus january_cogs
+the variable february_total of type Number is february_revenue plus february_cogs
+the variable march_total of type Number is march_revenue plus march_cogs
+
+print "january total cost:"
+print the variable january_total
+print "february total cost:"
+print the variable february_total
+print "march total cost:"
+print the variable march_total
+
+# calculate total quarterly cost
+the variable total_quarterly_cost of type Number is january_total plus february_total
+the variable total_quarterly_cost of type Number is total_quarterly_cost plus march_total
+
+print "total quarterly cost:"
+print the variable total_quarterly_cost

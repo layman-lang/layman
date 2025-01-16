@@ -1,0 +1,29 @@
+# test case 27
+# description: The layman programming language test case is designed to verify that a string can be successfully split into 2 separate words based on a specified separator, ensuring accurate word extraction and handling of edge cases such as multiple separators in a row.
+
+# simulate string splitting: "hello world" split by space
+the variable full_string of type String is "hello world"
+the variable word_one of type String is "hello"
+the variable word_two of type String is "world"
+
+# process each word
+the variable count of type Number is 0
+
+# process word_one (string, not integer)
+the variable count of type Number is count plus 1
+
+# process word_two (string, not integer)
+the variable count of type Number is count plus 1
+
+# verify word extraction
+print "word 1:"
+print the variable word_one
+print "word 2:"
+print the variable word_two
+print "word count:"
+print the variable count
+
+# test with another string
+the variable x of type Number is 5
+the variable test_string of type String is "test"
+print the variable test_string

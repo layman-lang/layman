@@ -1,0 +1,33 @@
+# test case 51
+# description: Here is a possible test case description for Test Case Number 51:
+
+# Write a program that imports a mathematical module and uses its functions to calculate the area of a circle given its radius, then verifies the result matches an expected value.
+
+import circle_module
+
+define function calculate_area that takes radius as Number and returns Number
+  the variable dummy_arg of type Number is 0
+  the variable pi_value of type Number is call function calculate_pi with argument dummy_arg
+  the variable radius_squared of type Number is call function calculate_square with argument radius
+  the variable area of type Number is pi_value times radius_squared
+  return area
+
+# calculate area of circle with radius 5
+the variable radius of type Number is 5
+the variable area of type Number is call function calculate_area with argument radius
+
+# calculate additional value
+the variable dummy_arg of type Number is 0
+the variable pi_value of type Number is call function calculate_pi with argument dummy_arg
+the variable additional_value of type Number is 6.7085
+the variable total of type Number is area plus additional_value
+the variable total of type Number is total times pi_value
+
+# verify result
+if total is greater than 0 then
+  the variable result of type Number is total
+  print "the variable result:"
+  print the variable result
+else
+  print "calculation error"
+end if

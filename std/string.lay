@@ -1,0 +1,7 @@
+# Standard String Library
+
+define function split that takes text, delimiter
+    return call function __str_split with text, delimiter
+
+define function trim that takes text
+    return call function __str_trim with text

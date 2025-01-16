@@ -1,0 +1,6 @@
+# negative test: incomplete describe statement
+# expected: error should be thrown
+
+describe 'my suite'
+
+

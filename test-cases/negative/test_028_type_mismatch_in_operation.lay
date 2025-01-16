@@ -1,0 +1,7 @@
+# negative test: type mismatch in operation
+# expected: type error should be thrown
+
+the variable x of type String is 'hello'
+the variable y of type Number is x divided by 2
+
+

@@ -1,0 +1,6 @@
+# negative test: invalid number literal
+# expected: error should be thrown
+
+the variable x of type Number is 12.34.56
+
+

@@ -1,0 +1,6 @@
+# negative test: string concatenation with number (should be explicit)
+# expected: type checker should catch this
+
+the variable x of type String is 'hello' plus 5
+
+

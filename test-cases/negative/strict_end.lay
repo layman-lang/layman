@@ -1,0 +1,7 @@
+describe 'strict end test'
+  test 't1'
+    print 't1'
+  end test
+  
+  end test # redundant, should fail
+end describe

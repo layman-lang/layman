@@ -1,0 +1,6 @@
+# negative test: incomplete object creation
+# expected: error should be thrown
+
+the variable person of type Person is a new Person
+
+

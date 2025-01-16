@@ -1,0 +1,7 @@
+# negative test: invalid loop variable usage
+# expected: error should be thrown
+
+for each in list do
+  print 'missing variable name'
+
+

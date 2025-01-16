@@ -1,0 +1,8 @@
+# negative test: if condition that isn't boolean
+# expected: type checker should catch this
+
+if 'hello' then
+  print 'world'
+end if
+
+

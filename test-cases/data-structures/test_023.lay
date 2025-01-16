@@ -1,0 +1,18 @@
+# test case 23
+# description: The layman programming language should implement a loop that allows users to iterate over a list of numbers, starting from a given number and counting up by 2 each time, until it reaches an arbitrarily high target value. This should be tested with a predefined input where the starting number is 10 and the target value is 50.
+
+# simulate iterating over numbers from 10 to 50, counting up by 2 each time
+the variable starting_number of type Number is 10
+the variable target_value of type Number is 50
+the variable current_number of type Number is starting_number
+
+# iterate from starting number to target, incrementing by 2 each time
+the variable max_iterations of type Number is 20
+the variable iteration_count of type Number is 0
+while iteration_count is less than max_iterations do
+  if current_number is greater than 9 then
+    print the variable current_number
+  end if
+  the variable current_number of type Number is current_number plus 2
+  the variable iteration_count of type Number is iteration_count plus 1
+end while

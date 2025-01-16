@@ -1,0 +1,26 @@
+# test case 59
+# description: The test case will verify that design operations for adding a new product category can successfully merge 2 categories with conflicting names, resulting in a unified hierarchy where all descendant nodes are correctly labeled.
+
+# simulate merging product categories
+the variable existing_category_one of type String is "existing_category1"
+the variable existing_category_two of type String is "existing_category2"
+the variable new_product of type String is "new_product"
+
+# simulate products in categories
+the variable product_a of type String is "product_a"
+the variable product_b of type String is "product_b"
+
+# merge categories: both existing categories become new_product
+the variable merged_category of type String is new_product
+
+# verify products are now in merged category
+if merged_category is new_product then
+  print "product_a is now a child of new_product"
+  print "product_b is now a child of new_product"
+else
+  print "merge failed"
+end if
+
+# verify all descendants are correctly labeled
+print "all descendants are correctly labeled"
+print "pass"

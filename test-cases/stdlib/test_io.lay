@@ -1,0 +1,20 @@
+print "--- Test Standard IO Library ---"
+
+import io as io
+
+the variable test_file is "test_io_output.txt"
+the variable content is "Hello from Layman IO!"
+
+print "Writing to file: " plus test_file
+call function io.write_file with test_file, content
+
+print "Reading from file: " plus test_file
+the variable read_content is call function io.read_file with test_file
+
+print "Read content: " plus read_content
+
+if read_content equals content then
+    print "IO Test Passed!"
+else
+    print "IO Test Failed!"
+end if

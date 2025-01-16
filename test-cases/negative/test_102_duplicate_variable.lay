@@ -1,0 +1,7 @@
+# negative test: declaring same variable twice
+# expected: type checker should catch this
+
+the variable x of type Number is 5
+the variable x of type Number is 10
+
+

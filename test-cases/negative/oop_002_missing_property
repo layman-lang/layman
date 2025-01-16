@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/oop_002_missing_property.js

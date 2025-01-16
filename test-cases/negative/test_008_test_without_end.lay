@@ -1,0 +1,7 @@
+# negative test: test without end test
+# expected: error should be thrown
+
+test 'my test'
+  the variable x of type Number is 5
+
+

@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/type_004_wrong_return_type.js

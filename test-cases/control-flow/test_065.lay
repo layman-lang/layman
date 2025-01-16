@@ -1,0 +1,12 @@
+# test case 65
+# description: filter even numbers and print non-even numbers
+
+ the variable number of type Number is 1
+ while number is less than 7 do
+  if number modulo 2 is 0 then
+    # even
+  else
+    print "not even"
+  end if
+  the variable number of type Number is number plus 1
+ end while

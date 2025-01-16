@@ -1,0 +1,8 @@
+# negative test: for loop without 'each' keyword
+# expected: parser should reject this
+
+for item in list do
+  print item
+end for
+
+

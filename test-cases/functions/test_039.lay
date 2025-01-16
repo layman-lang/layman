@@ -1,0 +1,37 @@
+# test case 39
+# description: Test Case 39: Design Operations - Creating a New Project. The system should allow users to create a new project with default settings and then attempt to save it without adding any design elements, verifying that an error message is displayed indicating that at least 1 element must be added to the project.
+
+define function show_error_message that takes message as String and returns Void
+  print the variable message
+  return nothing
+
+define function save_project that takes dummy as Number and returns Void
+  print "project saved successfully"
+  return nothing
+
+# main program starts here
+
+# test project creation with 0 design elements
+the variable count_of_design_elements of type Number is 0
+
+if count_of_design_elements is 0 then
+  the variable error_msg of type String is "at least 1 element must be added"
+  call function show_error_message with argument error_msg
+else
+  call function save_project with argument 0
+  print "project saved successfully"
+end if
+
+# simulate adding design elements
+the variable element_one of type Number is 1
+the variable element_two of type Number is 2
+the variable count_of_design_elements of type Number is count_of_design_elements plus element_one
+the variable count_of_design_elements of type Number is count_of_design_elements plus element_two
+
+# verify project can be saved after adding elements
+if count_of_design_elements is 0 then
+  the variable error_msg_two of type String is "at least 1 element must be added"
+  call function show_error_message with argument error_msg_two
+else
+  print "project saved successfully"
+end if

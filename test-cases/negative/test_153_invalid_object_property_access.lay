@@ -1,0 +1,7 @@
+# negative test: accessing property on non-object
+# expected: type checker should catch this
+
+the variable x of type Number is 5
+the variable y of type String is x dot name
+
+

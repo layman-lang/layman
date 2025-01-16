@@ -1,0 +1,7 @@
+# negative test: function with invalid return type
+# expected: parser should reject this
+
+define function test that takes nothing and returns InvalidType
+  return 5
+
+

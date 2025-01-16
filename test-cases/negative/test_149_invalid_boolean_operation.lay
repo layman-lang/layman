@@ -1,0 +1,7 @@
+# negative test: invalid boolean operation
+# expected: type checker should catch this
+
+the variable x of type Bool is true
+the variable y of type Number is x multiplied by 5
+
+

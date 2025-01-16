@@ -1,0 +1,31 @@
+# test case 12
+# description: pipeline operations simulated with transformations and validation
+
+define function transform_value that takes x as Number and returns Number
+  if x is 1 then
+    return 2
+  else
+    return x plus 1
+  end if
+
+# simulate reading and transforming 2 streams
+ the variable sum_one of type Number is 0
+ the variable i of type Number is 0
+ while i is less than 3 do
+  the variable sum_one of type Number is sum_one plus call function transform_value with argument i
+  the variable i of type Number is i plus 1
+ end while
+
+ the variable sum_two of type Number is 0
+ the variable j of type Number is 0
+ while j is less than 3 do
+  the variable sum_two of type Number is sum_two plus call function transform_value with argument j
+  the variable j of type Number is j plus 1
+ end while
+
+# validate by simple comparison
+ if sum_one is sum_two then
+  print "pipeline operation correct"
+ else
+  print "pipeline operation mismatch"
+ end if

@@ -1,0 +1,7 @@
+# Standard IO Library
+
+define function read_file that takes path
+    return call function __io_read_file with path
+
+define function write_file that takes path, content
+    return call function __io_write_file with path, content

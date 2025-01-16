@@ -1,0 +1,10 @@
+# negative test: object with property that doesn't exist in class
+# expected: type checker should catch this
+
+define class Person
+  the property name of type String
+
+the variable person of type Person is a new Person with
+  age is 25
+
+

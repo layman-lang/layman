@@ -1,0 +1,28 @@
+# Standard Math Library
+
+the constant PI is 3.14159265359
+the constant E is 2.71828182846
+
+define function square that takes x
+    return x times x
+
+define function cube that takes x
+    return x times x times x
+
+define function abs that takes x
+    if x is less than 0 then
+        return 0 minus x
+    else
+        return x
+
+define function max that takes a, b
+    if a is greater than b then
+        return a
+    else
+        return b
+
+define function min that takes a, b
+    if a is less than b then
+        return a
+    else
+        return b

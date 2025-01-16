@@ -1,0 +1,6 @@
+# negative test: invalid string literal (unclosed quote)
+# expected: lexer should catch this
+
+the variable x of type String is 'hello world
+
+

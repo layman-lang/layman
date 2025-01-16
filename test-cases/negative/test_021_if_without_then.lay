@@ -1,0 +1,7 @@
+# negative test: if without 'then' keyword
+# expected: error should be thrown
+
+if true
+  print 'hello'
+
+

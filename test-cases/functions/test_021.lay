@@ -1,0 +1,31 @@
+# test case 21
+# description: The test case will create 2 variables with different data types, assign them values, and then retrieve those values to verify they match the original assignments. It aims to ensure that variable declarations and assignments are correctly handled by the program.
+
+define function get_number_one that takes dummy as Number and returns Number
+  return 5
+
+define function get_number_two that takes dummy as Number and returns Number
+  return 10
+
+# call functions and store results
+the variable result of type Number is 5
+the variable other_result of type Number is 10
+
+# add the results
+the variable first_value of type Number is result plus other_result
+
+print "the first value is"
+print the variable first_value
+
+# test with multiplication
+the variable item of type Number is 3
+the variable current_value of type Number is result times item
+
+print "the current value is"
+print the variable current_value
+
+# test with division
+the variable third_result of type Number is other_result divided by item
+
+print "the third result is"
+print the variable third_result

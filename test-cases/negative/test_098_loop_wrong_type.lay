@@ -1,0 +1,9 @@
+# negative test: for loop iterator on non-iterable
+# expected: type checker should catch this
+
+the variable x of type Number is 5
+for each item in x do
+  print item
+end for
+
+

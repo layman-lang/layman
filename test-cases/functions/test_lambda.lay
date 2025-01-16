@@ -1,0 +1,9 @@
+print "--- Test Lambda Functions ---"
+
+define function apply_func takes x, f
+    return call function f with argument x
+
+the variable double is function of n returning n times 2
+print "Double 5 is " plus call function apply_func with 5 and double
+
+print "Square 4 is " plus call function apply_func with 4 and function of x returning x times x

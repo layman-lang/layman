@@ -1,0 +1,23 @@
+# test case OOP 005
+# description: Bank account class with deposit and withdrawal
+
+define class BankAccount that has
+  property balance of type Number
+  property owner of type Text
+
+  define function deposit that takes amount as Number and returns Void
+    the variable current of type Number is get balance from self
+    set balance in self to current plus amount
+
+  define function withdraw that takes amount as Number and returns Void
+    the variable current of type Number is get balance from self
+    set balance in self to current minus amount
+
+the variable account of type BankAccount is a new BankAccount with
+  balance which is 1000
+  owner which is 'John Doe'
+
+call function deposit on account with amount 250
+call function withdraw on account with amount 100
+print get balance from account
+

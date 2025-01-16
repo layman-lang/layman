@@ -1,0 +1,13 @@
+getting user data for:
+John
+got user data: John has 30 years old
+person added to favorites
+getting user data for:
+Jane
+got user data: Jane has 25 years old
+person added to favorites
+getting user data for:
+Bob
+failed to get user data
+person not added to favorites
+processing completed

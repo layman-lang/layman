@@ -1,0 +1,9 @@
+# test case 1
+# description: The layman programming language test case 1 "Simple Variable Setup" tests that a user can successfully declare and assign values to variables in a program. The test requires creating a program that declares 2 integer variables, assigns the value 5 to 1 variable, and assigns the value 10 to another variable, with the expected output being the values of both variables printed on separate lines.
+
+the variable x of type Number is 5
+the variable y of type Number is 10
+
+# print both variables on separate lines
+print the variable x
+print the variable y

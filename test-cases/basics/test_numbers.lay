@@ -1,0 +1,35 @@
+# test case numbers
+# description: Verify robust handling of English number words and literals.
+
+# Single words
+the variable var_one of type Number is 1
+print var_one
+
+the variable var_ten of type Number is 10
+print var_ten
+
+# Compound words
+the variable var_twenty_one of type Number is 21
+print var_twenty_one
+
+the variable var_ninety_nine of type Number is 99
+print var_ninety_nine
+
+# Literals
+the variable lit_21 of type Number is 21
+print lit_21
+
+# Mixed (should be equal)
+if var_twenty_one is lit_21 then
+  print "21 equals 21"
+else
+  print "mismatch"
+end if
+
+# Large numbers (single token)
+the variable var_hundred of type Number is 100
+print var_hundred
+
+# 0
+the variable z of type Number is 0
+print z

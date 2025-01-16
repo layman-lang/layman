@@ -1,0 +1,6 @@
+# negative test: circular import (should be detected)
+# expected: resolver should catch this
+
+import a from './test_106_circular_import_b.lay'
+
+

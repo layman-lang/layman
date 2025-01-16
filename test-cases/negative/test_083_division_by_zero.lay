@@ -1,0 +1,6 @@
+# negative test: division by 0 (should throw at runtime)
+# expected: execution should fail with error
+
+the variable x of type Number is 10 divided by 0
+
+

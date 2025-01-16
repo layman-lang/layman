@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/runtime_003_invalid_method_call.js

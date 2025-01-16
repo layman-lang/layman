@@ -1,0 +1,10 @@
+# negative test case: class validation failure
+# expected error: Class 'Person' has no method 'unknown_method'
+# description: Tests that calling an undefined method on a class instance raises a compile-time error
+define class Person that has
+  property name which is String
+
+the variable p is a new Person with
+  name is "Alice"
+
+print call unknown_method on p

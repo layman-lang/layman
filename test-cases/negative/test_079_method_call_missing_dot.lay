@@ -1,0 +1,9 @@
+# negative test: method call syntax without dot operator
+# expected: parser should reject this
+
+the variable person of type Person is a new Person with
+  name is 'John'
+
+call person getName
+
+

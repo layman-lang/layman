@@ -1,0 +1,9 @@
+# negative test: function call with wrong number of arguments
+# expected: error should be thrown
+
+define function add that takes x and y and returns Number
+  return x plus y
+
+call add with 1 argument
+
+

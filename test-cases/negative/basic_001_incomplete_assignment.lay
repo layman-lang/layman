@@ -1,0 +1,7 @@
+# negative test case: incomplete assignment
+# expected error: Missing value after 'is' in assignment
+# description: Tests that incomplete assignment statements are caught
+
+the variable x of type Number is
+
+

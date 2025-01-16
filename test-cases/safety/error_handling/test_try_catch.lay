@@ -1,0 +1,37 @@
+print "--- Test 1: Basic try-catch (no error) ---"
+try
+    print "Inside try block"
+catch error
+    print "Inside catch block (unexpected)"
+end try
+print "After try-catch"
+
+print "--- Test 2: Catching thrown error ---"
+try
+    print "Before throw"
+    throw "Something went wrong"
+    print "After throw (unexpected)"
+catch e
+    print "Caught error: " plus e
+end try
+print "After error catch"
+
+print "--- Test 3: Nested try-catch ---"
+try
+    try
+        throw "Inner error"
+    catch inner_e
+        print "Caught inner: " plus inner_e
+        throw "Outer error"
+    end try
+catch outer_e
+    print "Caught outer: " plus outer_e
+end try
+print "After nested"
+
+print "--- Test 4: Runtime error (division by zero) ---"
+try
+    the variable x is 10 divided by 0
+catch err
+    print "Caught runtime error: " plus err
+end try

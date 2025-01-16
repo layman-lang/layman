@@ -1,0 +1,5 @@
+define function calculate_pi that takes dummy as Number and returns Number
+  return 3.14159
+
+define function calculate_square that takes radius as Number and returns Number
+  return radius times radius

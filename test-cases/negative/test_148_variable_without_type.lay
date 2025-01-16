@@ -1,0 +1,6 @@
+# negative test: variable declaration without type
+# expected: parser should reject this
+
+the variable x is 5
+
+

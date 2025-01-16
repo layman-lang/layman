@@ -1,0 +1,7 @@
+# negative test case: missing 'variable' keyword
+# expected error: Missing 'variable' keyword in declaration
+# description: Tests that 'the variable' pattern is required
+
+the x is 5
+
+

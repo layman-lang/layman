@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/control_001_incomplete_if.js

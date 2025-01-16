@@ -1,0 +1,27 @@
+# test case 24
+# description: A programming language should be able to define functions with variable names and then call those functions from within other functions of the same language. The program should compile successfully when run in a standard interpreter without errors, warnings, or output. This ensures that the language's syntax allows for function reuse and modularity.
+
+define function add_numbers that takes a as Number and b as Number and returns Number
+  the variable result of type Number is a plus b
+  return result
+
+define function get_name that takes person_name as String and returns String
+  if person_name is not "" then
+    return person_name
+  else
+    return ""
+  end if
+
+define function greet that takes name as String and returns Void
+  the variable greeting of type String is call function concatenate with argument name and argument " is here!"
+  print the variable greeting
+  return nothing
+
+# test function calls from within other contexts
+the variable person_name of type String is "John Doe"
+the variable name_result of type String is call function get_name with argument person_name
+call function greet with argument person_name
+
+# test add_numbers function
+the variable sum_result of type Number is call function add_numbers with argument 5 and argument 3
+print the variable sum_result

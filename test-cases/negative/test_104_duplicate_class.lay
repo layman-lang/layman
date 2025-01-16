@@ -1,0 +1,10 @@
+# negative test: defining same class twice
+# expected: type checker should catch this
+
+define class Person
+  the property name of type String
+
+define class Person
+  the property age of type Number
+
+

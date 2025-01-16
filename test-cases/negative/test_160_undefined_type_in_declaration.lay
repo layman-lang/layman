@@ -1,0 +1,6 @@
+# negative test: using undefined type in variable declaration
+# expected: type checker should catch this
+
+the variable x of type UndefinedType is 5
+
+

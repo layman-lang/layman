@@ -1,0 +1,13 @@
+# test case OOP 001
+# description: Simple class definition and object creation
+
+define class Person that has
+  property name which is Text
+  property age which is Number
+
+the variable person of type Person is a new Person with
+  name which is 'Alice'
+  age which is 30
+
+print the variable person
+

@@ -1,0 +1,3 @@
+the variable x is 10
+the variable y is "hello"
+print x minus y

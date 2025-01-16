@@ -1,0 +1,7 @@
+# negative test: incomplete try statement
+# expected: error should be thrown
+
+try
+  the variable x of type Number is 5
+
+

@@ -1,0 +1,19 @@
+# test case OOP 002
+# description: Class with methods and inheritance
+
+define class Animal that has
+  property name which is Text
+  
+  define function speak that takes self and returns Text
+    return concatenate get name from self with ' makes a sound'
+
+define class Dog that extends Animal
+  
+  define function bark that takes self and returns Text
+    return call function concatenate with get name from self and ' barks'
+
+the variable myDog of type Dog is a new Dog with
+  name which is 'Buddy'
+
+call function print with call function bark on myDog
+

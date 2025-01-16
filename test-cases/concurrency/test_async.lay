@@ -1,0 +1,16 @@
+print "--- Test Async ---"
+
+define function slow_task
+    print "Starting slow task..."
+    the variable i is 0
+    while i < 10000 do
+        set i to i plus 1
+    end while
+    print "Slow task done!"
+    return "Result"
+
+print "Before start"
+the variable future is start call function slow_task
+print "After start (non-blocking)"
+the variable result is wait for future
+print "Result: " plus result

@@ -1,0 +1,6 @@
+# negative test: class declaration without properties
+# expected: error should be thrown or warning
+
+define class Person
+
+

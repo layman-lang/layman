@@ -1,0 +1,23 @@
+print "--- Test Parallel Execution ---"
+
+define function slow_task that takes name
+    print "Task " plus name plus " started"
+    
+    # Busy wait
+    define variable i is 0
+    while i < 5000 do
+        set i to i plus 1
+    end while
+    
+    print "Task " plus name plus " finished"
+    return name
+
+print "Before parallel block"
+
+run concurrently
+    call function slow_task with "A"
+    call function slow_task with "B"
+    call function slow_task with "C"
+and wait for all
+
+print "After parallel block (All tasks should be finished)"

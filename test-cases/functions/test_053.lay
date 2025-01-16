@@ -1,0 +1,12 @@
+# test case 53
+# description: extract name and address from input and print them
+
+define function extract_info that takes name as String and address as String and returns Void
+  print the variable name
+  print the variable address
+  return nothing
+
+# call the function with sample data
+ the variable name_one of type String is "john"
+ the variable address_one of type String is "123 main street"
+ call function extract_info with argument name_one and argument address_one

@@ -1,0 +1,7 @@
+# negative test: object creation with wrong type
+# expected: type error should be thrown
+
+the variable person of type Number is a new Person with
+  name is 'Alice'
+
+

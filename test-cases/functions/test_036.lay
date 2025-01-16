@@ -1,0 +1,33 @@
+# test case 36
+# description: Test Case 36: Verify Simple Arithmetic Operations - This test case should perform basic arithmetic calculations using decimal numbers to ensure accurate results and validate that the program can handle straightforward mathematical operations correctly. The test will validate the calculation of addition, subtraction, multiplication, and division of 2 integers with a positive result.
+
+# perform basic arithmetic operations
+# addition: 10 + 5 = 15
+the variable number_one of type Number is 10
+the variable number_two of type Number is 5
+the variable addition_result of type Number is number_one plus number_two
+
+# subtraction: 15 - 3 = 12
+the variable number_three of type Number is 15
+the variable number_four of type Number is 3
+the variable subtraction_result of type Number is number_three minus number_four
+
+# multiplication: 12 * 2 = 24
+the variable number_five of type Number is 12
+the variable number_six of type Number is 2
+the variable multiplication_result of type Number is number_five times number_six
+
+# division: 24 / 4 = 6
+the variable number_seven of type Number is 24
+the variable number_eight of type Number is 4
+the variable division_result of type Number is number_seven divided by number_eight
+
+# print results
+print "addition result:"
+print the variable addition_result
+print "subtraction result:"
+print the variable subtraction_result
+print "multiplication result:"
+print the variable multiplication_result
+print "division result:"
+print the variable division_result

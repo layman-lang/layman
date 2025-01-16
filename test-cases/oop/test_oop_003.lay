@@ -1,0 +1,22 @@
+# test case OOP 003
+# description: Person class with method to get full name
+
+define class Person that has
+  property firstName of type Text
+  property lastName of type Text
+  property age of type Number
+
+the variable alice of type Person is a new Person with
+  firstName which is 'Alice'
+  lastName which is 'Smith'
+  age which is 30
+
+the variable bob of type Person is a new Person with
+  firstName which is 'Bob'
+  lastName which is 'Jones'
+  age which is 25
+
+print get firstName from alice
+print get lastName from bob
+print get age from alice
+

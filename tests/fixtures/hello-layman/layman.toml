@@ -1,0 +1,7 @@
+[package]
+name = "hello-layman"
+version = "0.1.0"
+description = "A minimal Layman package"
+authors = ["GACWR <info@gacwr.io>"]
+[dependencies]
+# Add dependencies here if needed

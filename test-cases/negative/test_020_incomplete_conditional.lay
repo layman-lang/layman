@@ -1,0 +1,6 @@
+# negative test: incomplete conditional statement
+# expected: error should be thrown
+
+if true
+
+

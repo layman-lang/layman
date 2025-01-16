@@ -1,0 +1,42 @@
+# test case 68
+# description: The "Type Definitions and Usage" test case, Test Case Number 68, tests that a layman's programming language correctly defines and uses different data types, such as integers, strings, and booleans, to store and manipulate values in a program. The test generates an example program with correct type definitions and usage, ensuring that the language distinguishes between numeric and non-numeric inputs, handles string operations properly, and enforces boolean values within logical statements.
+
+# use different data types: numbers, strings, and booleans
+the variable person_name of type String is "john"
+the variable person_age of type Number is 25
+
+the variable user_name of type String is "jane"
+the variable user_balance of type Number is 1000
+
+# use numbers in a loop
+the variable count of type Number is 0
+the variable index of type Number is 1
+while index is less than or equal to 5 do
+  the variable count of type Number is count plus index
+  the variable index of type Number is index plus 1
+end while
+
+# use boolean in conditional
+the variable condition of type Bool is true
+if condition is true then
+  the variable result of type Number is count times 2
+  print the variable result
+else
+  print "count is not greater than 10"
+end if
+
+# use string operations
+the variable message of type String is "hello"
+the variable world_text of type String is " world"
+the variable greeting of type String is call function concatenate with argument message and argument world_text
+print the variable greeting
+
+# verify type distinctions: numeric vs non-numeric
+the variable numeric_value of type Number is 10
+the variable text_value of type String is "10"
+if numeric_value is 10 then
+  print "numeric value is correct"
+end if
+if text_value is "10" then
+  print "text value is correct"
+end if

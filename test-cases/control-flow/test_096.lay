@@ -1,0 +1,32 @@
+# test case 96
+# description: The programming language should correctly perform addition and subtraction operations on 2 numbers, yielding a single numerical result that is accurate to within 1 decimal place. The test case will input values for x and y such as 10 and 5, and verify the output is 15, or -5 with an error margin of 0.01.
+
+define function add_numbers that takes x as Number and y as Number and returns Number
+  the variable total of type Number is x plus y
+  return total
+
+# test addition: x = 10, y = 5, result should be 15
+the variable x of type Number is 10
+the variable y of type Number is 5
+the variable result of type Number is call function add_numbers with argument x and argument y
+
+# verify result is 15
+if result is 15 then
+  print "addition result is correct:"
+  print the variable result
+else
+  print "addition result is incorrect"
+  print the variable result
+end if
+
+# test subtraction: 10 - 5 = 5
+the variable subtraction_result of type Number is x minus y
+
+# verify subtraction result
+if subtraction_result is 5 then
+  print "subtraction result is correct:"
+  print the variable subtraction_result
+else
+  print "subtraction result is incorrect"
+  print the variable subtraction_result
+end if

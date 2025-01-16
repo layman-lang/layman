@@ -1,0 +1,8 @@
+# negative test case: 'is a' without 'new' (incomplete object creation)
+# expected error: 'is a' must be followed by 'new' for object creation
+# description: Tests that object creation syntax is complete
+
+the variable person is a Person with
+  name which is 'Alice'
+
+

@@ -1,0 +1,32 @@
+# test case 6
+# description: Test Case 6: Checking Dictionary Update - The program should successfully update a dictionary by adding a new key-value pair and verify that all existing keys are still present with their original values after the update, ensuring no data is lost.
+
+# test case 6
+# description: Test Case 6: Checking Dictionary Update - The program should successfully update a dictionary by adding a new key-value pair and verify that all existing keys are still present with their original values after the update, ensuring no data is lost.
+
+the variable users of type Dictionary is an empty dictionary
+users["john"] = 30
+
+# verify initial state
+if users["john"] is 30 then
+  print "initial user found"
+else
+  print "initial user not found"
+end if
+
+# add new user
+users["jane"] = 25
+
+# verify update
+if users["jane"] is 25 then
+  print "new user added successfully"
+else
+  print "failed to add new user"
+end if
+
+# verify existing user still exists
+if users["john"] is 30 then
+  print "existing user preserved"
+else
+  print "existing user lost"
+end if

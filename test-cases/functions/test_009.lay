@@ -1,0 +1,34 @@
+# test case 9
+# description: Here is a test case description for language test case number 9:
+
+# Write a program that takes an integer as input and uses pattern matching to determine if it is even, odd, or a special value (e.g. "even", "odd", "unknown") based on the remainder when divided by a given divisor (e.g. 2).
+
+# test with input number
+the variable input_number of type Number is 10
+
+# determine if number is even, odd, or unknown based on remainder when divided by 2
+the variable divisor of type Number is 2
+the variable remainder of type Number is input_number modulo divisor
+
+if remainder is 0 then
+  print "even"
+else
+  # check if it's odd
+  if remainder is 1 then
+    print "odd"
+  else
+    print "unknown"
+  end if
+end if
+
+# test with another number
+the variable input_number_two of type Number is 11
+the variable remainder_two of type Number is input_number_two modulo divisor
+
+if remainder_two is 0 then
+  print "even"
+else if remainder_two is 1 then
+  print "odd"
+else
+  print "unknown"
+end if

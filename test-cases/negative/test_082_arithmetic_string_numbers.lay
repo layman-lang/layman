@@ -1,0 +1,7 @@
+# negative test: arithmetic operation on string and number
+# expected: type checker should catch this
+
+the variable x of type String is 'hello'
+the variable y of type Number is x plus 5
+
+

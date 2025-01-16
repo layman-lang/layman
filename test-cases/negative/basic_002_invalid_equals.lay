@@ -1,0 +1,7 @@
+# negative test case: invalid equals usage
+# expected error: Incomplete statement - 'equals' without right-hand side
+# description: Tests that incomplete 'equals' usage is caught (like the bug we found)
+
+then print result of age is age equals
+
+

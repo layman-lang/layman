@@ -1,0 +1,9 @@
+# negative test: function parameter with wrong type passed
+# expected: type checker should catch this
+
+define function add that takes x of type Number and y of type Number and returns Number
+  return x plus y
+
+the variable result of type Number is call add with 'hello' and 'world'
+
+

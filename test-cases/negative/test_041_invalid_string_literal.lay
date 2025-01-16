@@ -1,0 +1,6 @@
+# negative test: invalid string literal
+# expected: error should be thrown
+
+the variable x of type String is 'unclosed string
+
+

@@ -1,0 +1,23 @@
+# test case 69
+# description: Test Case 69: Match a Simple Name with a Prefix. The program should be able to identify whether the input name "John" matches the prefix "Mr." when compared against a list of known prefixes, returning true if they match and false otherwise.
+
+# test name matching with prefixes
+the variable name of type String is "John"
+the variable prefix_mr of type String is "Mr."
+the variable prefix_ms of type String is "Ms."
+the variable prefix_mrs of type String is "Mrs."
+
+# check if name matches any prefix pattern
+# for "Mr. John", we check if name starts with prefix
+the variable name_with_mr of type String is call function concatenate with argument prefix_mr and argument name
+the variable name_with_ms of type String is call function concatenate with argument prefix_ms and argument name
+the variable name_with_mrs of type String is call function concatenate with argument prefix_mrs and argument name
+
+# verify prefix matching
+if name_with_mr is "Mr.John" then
+  print "name matches Mr. prefix"
+else
+  print "name does not match Mr. prefix"
+end if
+
+print "prefix matching test completed"

@@ -1,0 +1,6 @@
+# negative test: invalid number format
+# expected: lexer should catch this
+
+the variable x of type Number is 12.34.56
+
+

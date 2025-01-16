@@ -1,0 +1,7 @@
+# negative test: invalid indentation in block
+# expected: should handle or error
+
+if true then
+print 'should be indented'
+
+

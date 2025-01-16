@@ -1,0 +1,6 @@
+# negative test: import path without quotes
+# expected: parser should reject this
+
+import utils from ./utils.lay
+
+

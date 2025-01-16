@@ -1,0 +1,21 @@
+# test case OOP 004
+# description: Calculator class with methods
+
+define class Calculator that has
+  property result of type Number
+
+  define function add that takes value as Number and returns Void
+    the variable current of type Number is get result from self
+    set result in self to current plus value
+
+  define function multiply that takes value as Number and returns Void
+    the variable current of type Number is get result from self
+    set result in self to current times value
+
+the variable calc of type Calculator is a new Calculator with
+  result which is 0
+
+call function add on calc with value 5
+call function multiply on calc with value 2
+print get result from calc
+

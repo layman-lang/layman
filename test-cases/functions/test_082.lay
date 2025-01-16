@@ -1,0 +1,34 @@
+# test case 82
+# description: Here is a possible test case description for test case number 82:
+
+# The program should correctly handle the scenario where the user inputs an age that requires a senior discount but not a student discount, and display "You qualify for a senior discount". If the input age falls within the range of 65-70, the output should be different from what is displayed when the age falls outside this range.
+
+define function print_message that takes message as String and returns Void
+  print the variable message
+  return nothing
+
+# test age-based discount eligibility
+the variable age of type Number is 67
+the variable senior_age_range_start of type Number is 65
+the variable senior_age_range_end of type Number is 70
+
+# check if age qualifies for senior discount
+the variable age_plus_eighteen of type Number is age plus 18
+if age_plus_eighteen is senior_age_range_start and age is less than or equal to senior_age_range_end then
+  call function print_message with argument "You qualify for a senior discount"
+else if age_plus_eighteen is senior_age_range_start then
+  call function print_message with argument "You qualify for a student discount"
+else
+  call function print_message with argument "You do not qualify for any discounts"
+end if
+
+# test with threshold values
+the variable threshold_one of type Number is senior_age_range_end
+the variable threshold_two of type Number is senior_age_range_start
+
+print "threshold values:"
+print the variable threshold_one
+print the variable threshold_two
+
+print "age years old:"
+print the variable age

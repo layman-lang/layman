@@ -1,0 +1,6 @@
+# negative test: invalid string concatenation syntax
+# expected: parser should reject this or type checker should catch
+
+the variable x of type String is 'hello' concatenated with 'world'
+
+

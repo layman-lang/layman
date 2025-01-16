@@ -1,0 +1,12 @@
+# expect function - assertion helper for tests
+# pure english syntax following goals.mdc
+
+define function assert_eq that takes actual and expected and returns Void
+  if actual is not expected then
+    throw "expected " plus expected plus " but got " plus actual
+  else
+    print "Assertion passed"
+  end if
+
+# verification call
+call assert_eq with "test passes", "test passes"

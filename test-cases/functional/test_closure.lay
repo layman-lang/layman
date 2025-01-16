@@ -1,0 +1,8 @@
+# test case Functional 001
+# description: Test closures (lexical scoping)
+
+define function makeAdder that takes x
+  return function of y returning x plus y
+
+the variable addFive is call function makeAdder with 5
+print call function addFive with 10

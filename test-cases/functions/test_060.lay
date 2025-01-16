@@ -1,0 +1,40 @@
+# test case 60
+# description: Test Case 60: Evaluate simple arithmetic expressions to ensure correct calculation of sums, differences, products, and quotients with integers.
+
+# test simple arithmetic expressions
+the variable number_one of type Number is 2
+the variable number_two of type Number is 3
+the variable number_three of type Number is 4
+
+# test addition
+the variable sum_result of type Number is number_one plus number_two
+print "sum result:"
+print the variable sum_result
+
+# test subtraction
+the variable diff_result of type Number is number_three minus number_one
+print "difference result:"
+print the variable diff_result
+
+# test multiplication
+the variable product_result of type Number is number_one times number_two
+print "product result:"
+print the variable product_result
+
+# test division
+the variable quotient_result of type Number is number_three divided by number_one
+print "quotient result:"
+print the variable quotient_result
+
+# verify all calculations
+if sum_result is 5 then
+  print "addition correct"
+else
+  print "addition incorrect"
+end if
+
+if diff_result is 2 then
+  print "subtraction correct"
+else
+  print "subtraction incorrect"
+end if

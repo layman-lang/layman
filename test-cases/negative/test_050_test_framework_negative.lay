@@ -1,0 +1,12 @@
+# negative test: test framework usage errors
+# expected: errors should be caught during parsing
+
+test
+  expect 5 is 5
+end test
+
+describe
+  test 'test'
+    expect 5 is 5
+  end test
+end describe

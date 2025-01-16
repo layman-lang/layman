@@ -1,0 +1,6 @@
+# negative test: expect without 'is' keyword
+# expected: error should be thrown
+
+expect the variable x the variable y
+
+

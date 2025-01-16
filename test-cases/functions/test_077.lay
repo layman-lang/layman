@@ -1,0 +1,23 @@
+# test case 77
+# description: Here is a test case description for layman programming language test case number 77:
+
+# The test verifies that the program correctly concatenates multiple strings together and returns the resulting string, with example inputs including "Hello World" + ", " followed by a single quote and then another string. The expected output should be a single concatenated string without any extra characters.
+
+# test string concatenation
+the variable string_one of type String is "Hello World"
+the variable separator of type String is ", "
+the variable string_two of type String is "test"
+
+# concatenate strings
+the variable step_one of type String is call function concatenate with argument string_one and argument separator
+the variable result of type String is call function concatenate with argument step_one and argument string_two
+
+# verify concatenation
+print "concatenated string:"
+print the variable result
+
+# test with additional strings
+the variable additional_string of type String is " more text"
+the variable final_result of type String is call function concatenate with argument result and argument additional_string
+
+print the variable final_result

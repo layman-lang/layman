@@ -1,0 +1,22 @@
+# test case OOP Polymorphism
+# description: Test method overriding and inheritance
+
+define class Animal that has
+  property name which is Text
+  
+  define function speak that takes self
+    return "Generic animal sound"
+
+define class Dog that extends Animal
+  define function speak that takes self
+    return "Woof!"
+
+define class Cat that extends Animal
+  define function speak that takes self
+    return "Meow!"
+
+the variable dog is a new Dog with name is "Buddy"
+the variable cat is a new Cat with name is "Whiskers"
+
+print call function speak on dog
+print call function speak on cat

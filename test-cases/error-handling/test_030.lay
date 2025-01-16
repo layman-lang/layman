@@ -1,0 +1,20 @@
+# test case 30
+# description: Test Case 30: Handling Division by 0 Error - The program attempts to divide a number by 0 using division operator and verifies if the program throws a meaningful error message indicating division by 0 error.
+
+define function check_division_by_zero that takes dummy as Number and returns Void
+  the variable x of type Number is 5
+  the variable y of type Number is 0
+  
+  try
+    the variable result of type Number is x divided by y
+    print the variable result
+  catch error
+    print "error: " + error
+  end try
+  return nothing
+
+# test division by 0 handling
+the variable dummy_value of type Number is 0
+call function check_division_by_zero with argument dummy_value
+
+print "the program completed successfully"

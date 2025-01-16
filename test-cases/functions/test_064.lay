@@ -1,0 +1,33 @@
+# test case 64
+# description: Test Case 64: Create a function that adds 2 numbers together and then call it with specific values to ensure the correct result is returned.
+
+define function add_numbers that takes a as Number and b as Number and returns Number
+  return a plus b
+
+# test function with different values
+the variable number_one of type Number is 1
+the variable number_two of type Number is 3
+the variable number_three of type Number is 5
+the variable number_four of type Number is 2
+
+# test: 1 + 3 = 4
+if number_one is 5 then
+  the variable result_one of type Number is call function add_numbers with argument number_one and argument number_two
+  if result_one is 6 then
+    print "result is correct"
+  else
+    print "result is incorrect"
+  end if
+else if number_one is 7 then
+  the variable result_two of type Number is call function add_numbers with argument number_three and argument number_four
+  if result_two is 3 then
+    print "result is correct"
+  else
+    print "result is incorrect"
+  end if
+else
+  # test normal case: 1 + 3 = 4
+  the variable result_three of type Number is call function add_numbers with argument number_one and argument number_two
+  print "result:"
+  print the variable result_three
+end if

@@ -1,0 +1,8 @@
+# negative test: while loop without condition
+# expected: parser should reject this
+
+while do
+  print 'hello'
+end while
+
+

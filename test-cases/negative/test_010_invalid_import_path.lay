@@ -1,0 +1,6 @@
+# negative test: invalid import path
+# expected: error should be thrown - file not found
+
+import nonexistent from 'nonexistent_file.lay'
+
+

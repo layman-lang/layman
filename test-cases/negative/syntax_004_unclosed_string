@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/syntax_004_unclosed_string.js

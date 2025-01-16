@@ -1,0 +1,33 @@
+# test case 85
+# description: The test case checks that a list comprehension correctly filters out even numbers from a list of integers, producing an output with only odd numbers as expected. It also verifies that the resulting list is generated in a single, efficient operation. The test should produce an output of [1, 3, 5] when given the input list [2, 4, 6, 8, 10].
+
+# simulate list of numbers: [2, 4, 6, 8, 10]
+the variable numbers of type List of Number is a list containing 2, 4, 6, 8, 10
+
+# filter out even numbers (keep odd numbers)
+the variable odd_numbers of type List of Number is an empty list
+
+for each n in numbers do
+    if n modulo 2 is not 0 then
+        call add on odd_numbers with n
+    end if
+end for
+
+# verify: all numbers in input are even, so result should be empty (0 odd numbers)
+print "odd numbers count:"
+the variable count of type Number is odd_numbers.size
+print count
+
+# test with odd numbers: [1, 3, 5]
+the variable odd_input of type List of Number is a list containing 1, 3, 5
+the variable odd_result of type List of Number is an empty list
+
+for each n in odd_input do
+    if n modulo 2 is not 0 then
+        call add on odd_result with n
+    end if
+end for
+
+print "result with [1, 3, 5]:"
+the variable result_count of type Number is odd_result.size
+print result_count

@@ -1,0 +1,6 @@
+# negative test: incomplete expect statement
+# expected: error should be thrown
+
+expect the variable x
+
+

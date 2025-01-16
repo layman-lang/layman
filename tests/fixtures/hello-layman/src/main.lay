@@ -1,0 +1,3 @@
+define function say_hello
+    print "Hello from Layman Package!"
+end function

@@ -1,0 +1,7 @@
+# negative test: class inheriting from non-existent class
+# expected: type checker should catch this
+
+define class Child extends Parent
+  the property value of type Number
+
+

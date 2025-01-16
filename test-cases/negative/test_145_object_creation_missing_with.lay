@@ -1,0 +1,10 @@
+# negative test: object creation without 'with' keyword
+# expected: parser should reject this
+
+define class Person
+  the property name of type String
+
+the variable person of type Person is a new Person
+  name is 'John'
+
+

@@ -1,0 +1,20 @@
+# example of negative testing - expecting specific failures
+# demonstrates how to test error conditions
+
+describe 'error handling tests'
+  test 'test that division by zero throws error'
+    expect error
+      the variable x of type Number is five
+      the variable y of type Number is zero
+      the variable result of type Number is x divided by y
+    with message 'division by zero'
+  end test
+  
+  test 'test that undefined variable throws error'
+    expect error
+      print the variable undefined_var
+    with message 'undefined variable'
+  end test
+end describe
+
+

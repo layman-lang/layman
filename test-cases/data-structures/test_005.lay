@@ -1,0 +1,41 @@
+# test case 5
+# description: Verify list creation, access, and iteration
+
+# Create a list with 5 elements: 5, 6, 7, 8, 9
+the variable generated_list of type List of Number is the list containing 5, 6, 7, 8, 9
+
+# Verify length
+the variable list_len of type Number is call function len with argument generated_list
+if list_len is 5 then
+  print "Length is correct"
+else
+  print "Length is incorrect"
+end if
+
+# Verify values
+the variable item1 of type Number is item 1 of generated_list
+if item1 is 5 then
+  print "Item 1 is correct"
+else
+  print "Item 1 is incorrect"
+end if
+
+the variable item5 of type Number is item 5 of generated_list
+if item5 is 9 then
+  print "Item 5 is correct"
+else
+  print "Item 5 is incorrect"
+end if
+
+# Loop through list
+the variable sum of type Number is 0
+for each item in generated_list do
+  set sum to sum plus item
+end for
+
+# Sum should be 5+6+7+8+9 = 35
+if sum is 35 then
+  print "Sum is correct"
+else
+  print "Sum is incorrect"
+end if

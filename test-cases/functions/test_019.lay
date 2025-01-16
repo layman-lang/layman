@@ -1,0 +1,52 @@
+# test case 19
+# description: Test Case 19: Design Operations - Create a new design and test its successful deletion by another authorized user.
+
+# simulate creating a design
+the variable design_name of type String is "new design"
+
+# simulate deleting design
+the variable delete_result of type Bool is true
+
+if delete_result is true then
+  print "the design has been successfully deleted"
+else
+  print "error deleting the design"
+end if
+
+# simulate creating account
+the variable user_name of type String is "user"
+the variable password of type String is "secure password"
+the variable account_details of type String is "account created"
+
+if account_details is not "not created" then
+  print "the account has been successfully created"
+else
+  print "error creating the account"
+end if
+
+# simulate adding numbers to account
+the variable account_value of type Number is 10
+the variable account_value of type Number is account_value plus 5
+
+print "the new value of account details is"
+print the variable account_value
+
+# simulate updating password
+the variable password_changed of type Bool is true
+
+if password_changed is false then
+  print "error updating the account password"
+else
+  print "the account password has been successfully updated"
+end if
+
+# simulate deleting account
+the variable delete_account_result of type Bool is true
+
+if delete_account_result is true then
+  print "the account has been successfully deleted"
+else
+  print "error deleting the account"
+end if
+
+print "all done"

@@ -1,0 +1,9 @@
+# negative test: expect with type mismatch
+# expected: should show type error or assertion failure
+
+test 'type test'
+  the variable x of type Number is 5
+  expect x is '5'
+end test
+
+

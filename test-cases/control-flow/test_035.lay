@@ -1,0 +1,52 @@
+# test case 35
+# description: A program is expected to calculate the total cost of a purchase after applying applicable discounts based on a customer's rewards status and the quantity purchased. The total cost should be displayed, including any adjustments for tax and shipping fees as specified by the program's settings.
+
+# initialize purchase details
+the variable base_cost of type Number is 0
+the variable item_one_price of type Number is 10
+the variable item_two_price of type Number is 5
+the variable base_cost of type Number is base_cost plus item_one_price
+the variable base_cost of type Number is base_cost plus item_two_price
+
+# customer rewards status
+the variable rewards_status of type String is "gold"
+
+# apply rewards discount based on status
+the variable discount_percent of type Number is 0
+if rewards_status is "gold" then
+  the variable discount_percent of type Number is 10
+else if rewards_status is "silver" then
+  the variable discount_percent of type Number is 5
+else
+  the variable discount_percent of type Number is 0
+end if
+
+# calculate discount amount (10% of base cost)
+# for 10% discount: use 0.1 as multiplier
+the variable discount_multiplier of type Number is 0.1
+if discount_percent is 10 then
+  the variable discount_multiplier of type Number is 0.1
+else if discount_percent is 5 then
+  the variable discount_multiplier of type Number is 0.5
+else
+  the variable discount_multiplier of type Number is 0
+end if
+the variable discount_amount of type Number is base_cost times discount_multiplier
+
+# apply discount to cost
+the variable cost_after_discount of type Number is base_cost minus discount_amount
+
+# calculate tax (8 percent)
+the variable tax_rate of type Number is 0.8
+the variable tax_amount of type Number is cost_after_discount times tax_rate
+
+# add tax to cost
+the variable cost_with_tax of type Number is cost_after_discount plus tax_amount
+
+# add shipping fee
+the variable shipping_fee of type Number is 10
+the variable total_cost of type Number is cost_with_tax plus shipping_fee
+
+# print total cost
+print "total cost equals"
+print the variable total_cost

@@ -1,0 +1,26 @@
+# test case 83
+# description: Write a program that simulates a music playlist with an infinite loop of favorite songs using only for, while, and repeat statements to maintain consistency across different programming languages. The output should display the song title every few seconds.
+
+# simulate a music playlist with favorite songs
+the variable song_one of type String is "Song 1"
+the variable song_two of type String is "Song 2"
+the variable song_three of type String is "Song 3"
+
+# play songs in a loop (simulated with limited iterations)
+the variable play_count of type Number is 0
+the variable max_plays of type Number is 3
+
+while play_count is less than max_plays do
+  # play song 1
+  print the variable song_one
+  
+  # play song 2
+  print the variable song_two
+  
+  # play song 3
+  print the variable song_three
+  
+  the variable play_count of type Number is play_count plus 1
+end while
+
+print "playlist simulation completed"

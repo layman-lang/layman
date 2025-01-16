@@ -1,0 +1,41 @@
+# test case 72
+# description: As a data processing pipeline, verify that the system correctly aggregates values from multiple input streams using an arithmetic mean operation, ensuring accurate results after adding and subtracting values from different sources.
+
+define function calculate_mean that takes sum_value as Number and count_value as Number and returns Number
+  if count_value is not 0 then
+    the variable mean of type Number is sum_value divided by count_value
+    return mean
+  else
+    return 0
+  end if
+
+# simulate input streams with values
+the variable stream_one_value_one of type Number is 10
+the variable stream_one_value_two of type Number is 20
+the variable stream_one_sum of type Number is stream_one_value_one plus stream_one_value_two
+the variable stream_one_count of type Number is 2
+
+# calculate mean for stream 1
+the variable mean_one of type Number is call function calculate_mean with argument stream_one_sum and argument stream_one_count
+
+print "stream 1 mean:"
+print the variable mean_one
+
+# simulate second stream
+the variable stream_two_value_one of type Number is 30
+the variable stream_two_value_two of type Number is 40
+the variable stream_two_sum of type Number is stream_two_value_one plus stream_two_value_two
+the variable stream_two_count of type Number is 2
+
+# calculate mean for stream 2
+the variable mean_two of type Number is call function calculate_mean with argument stream_two_sum and argument stream_two_count
+
+print "stream 2 mean:"
+print the variable mean_two
+
+# aggregate means
+the variable total_mean of type Number is mean_one plus mean_two
+the variable total_mean of type Number is total_mean divided by 2
+
+print "aggregated mean:"
+print the variable total_mean

@@ -1,0 +1,6 @@
+# negative test: invalid nested expression structure
+# expected: parser should reject this
+
+the variable x of type Number is 5 plus plus 5
+
+

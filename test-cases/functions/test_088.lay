@@ -1,0 +1,30 @@
+# test case 88
+# description: As a simple calculator program, test case 88 checks that the program correctly handles input numbers of different data types by using meaningful variable names and definitions to store them in an array, and then performs calculations on these numbers. The test ensures that the program's type checking logic is functioning as expected. It creates 2 arrays with numbers of different data types, assigns values, and then attempts to perform addition operations on them.
+
+# create variables with meaningful names for calculations
+the variable number_one of type Number is 5
+the variable number_two of type Number is 10
+the variable number_three of type Number is 15
+
+# perform addition operations
+the variable result_one of type Number is number_one plus number_two
+the variable result_two of type Number is result_one plus number_three
+
+# verify type checking and calculations
+print "calculation result:"
+print the variable result_two
+
+# test with different number values
+the variable value_a of type Number is 20
+the variable value_b of type Number is 30
+the variable sum_result of type Number is value_a plus value_b
+
+print "sum of different values:"
+print the variable sum_result
+
+# verify type checking works correctly
+if sum_result is 50 then
+  print "type checking and calculations working correctly"
+else
+  print "type checking or calculation error"
+end if

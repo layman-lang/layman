@@ -1,0 +1,21 @@
+# test case 56
+# description: Test Case 56: Simple Arithmetic Expression - This test checks that the program correctly evaluates a simple arithmetic expression involving addition and subtraction of 2 integers to produce an expected result. The input is a string containing the expression "8 + 2 - 3" and the expected output should be "7".
+
+# evaluate the expression "8 + 2 - 3"
+# step 1: add 8 + 2 = 10
+the variable first_number of type Number is 8
+the variable second_number of type Number is 2
+the variable intermediate_result of type Number is first_number plus second_number
+
+# step 2: subtract 3 from the result: 10 - 3 = 7
+the variable third_number of type Number is 3
+the variable result of type Number is intermediate_result minus third_number
+
+# verify the result is 7
+the variable expected_result of type Number is 7
+if result is expected_result then
+  print "test passed"
+else
+  print "test failed"
+end if
+print the variable result

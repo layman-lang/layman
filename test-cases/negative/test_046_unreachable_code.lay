@@ -1,0 +1,8 @@
+# negative test: unreachable code after return
+# expected: warning or should work
+
+define function test that returns Number
+  return 5
+  print 'unreachable'
+
+

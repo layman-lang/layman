@@ -1,0 +1,19 @@
+# test case 3
+# description: Test Case 3: "Find the Total Cost of Multiple Items" - This test verifies that a program can calculate and display the total cost of multiple items by iterating through a list and adding its price to a running total.
+
+the variable prices of type List of Number is a list containing 5, 3, 2, 0
+the variable running_total of type Number is 0
+
+for each price in prices do
+  if price is greater than 0 then
+    the variable running_total of type Number is running_total plus price
+  else
+    the variable running_total of type Number is running_total plus 0
+  end if
+end for
+
+if running_total is 10 then
+  print "the result is 10"
+else
+  print "the result is not 10"
+end if

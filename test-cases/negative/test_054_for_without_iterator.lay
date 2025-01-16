@@ -1,0 +1,8 @@
+# negative test: for each without iterator variable
+# expected: parser should reject this
+
+for each in list do
+  print 'item'
+end for
+
+

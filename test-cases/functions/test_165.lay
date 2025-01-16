@@ -1,0 +1,10 @@
+# test case 165
+# description: Regression test for back-to-back function definitions.
+
+define function test1 that takes x as Number and returns Number
+  return x
+
+define function test2 that takes y as Number and returns Number
+  return y
+
+print "done"

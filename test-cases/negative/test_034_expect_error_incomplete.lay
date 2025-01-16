@@ -1,0 +1,7 @@
+# negative test: incomplete expect error statement
+# expected: error should be thrown during execution
+# this test should compile but fail at runtime when expect error is incomplete
+
+expect error
+  throw 'error'
+# missing 'with message' clause

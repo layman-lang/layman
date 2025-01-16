@@ -1,0 +1,9 @@
+# negative test: variable shadowing that might cause confusion
+# expected: type checker might warn or reject
+
+if true then
+  the variable x of type Number is 5
+end if
+the variable x of type String is 'hello'
+
+

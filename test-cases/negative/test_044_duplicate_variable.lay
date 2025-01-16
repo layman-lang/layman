@@ -1,0 +1,7 @@
+# negative test: duplicate variable declaration
+# expected: error should be thrown
+
+the variable x of type Number is 5
+the variable x of type Number is 10
+
+

@@ -1,0 +1,12 @@
+# negative test: method override with wrong signature
+# expected: type checker should catch this
+
+define class Parent
+  define function getName that takes nothing and returns String
+    return 'parent'
+
+define class Child extends Parent
+  define function getName that takes x of type Number and returns String
+    return 'child'
+
+

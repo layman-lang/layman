@@ -1,0 +1,6 @@
+# negative test: invalid import syntax
+# expected: error should be thrown
+
+import
+
+

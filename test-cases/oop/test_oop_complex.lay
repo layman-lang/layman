@@ -1,0 +1,28 @@
+# test case OOP Complex
+# description: Test inheritance chains and closures in methods
+
+define class Shape that has
+  property color which is Text
+  
+  define function get_description that takes self
+    return "A " plus self.color plus " shape"
+
+define class Circle that extends Shape
+  property radius which is Number
+  
+  define function get_description that takes self
+    return "A " plus self.color plus " circle with radius " plus self.radius
+    
+  define function area_calculator that takes self and returns Any
+    # Return a closure that calculates area
+    return function of scale returning 3.14 times self.radius times self.radius times scale
+
+the variable circle is a new Circle with
+  color is "red"
+  radius is 5
+
+print call function get_description on circle
+
+the variable calc is call function area_calculator on circle
+print "Area scaled by 1: " plus call function calc with 1
+print "Area scaled by 2: " plus call function calc with 2

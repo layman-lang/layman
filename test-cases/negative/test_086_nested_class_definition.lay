@@ -1,0 +1,10 @@
+# negative test: class definition inside function
+# expected: parser should reject this
+
+define function test that takes nothing and returns Void
+  define class Inner
+    the property value of type Number
+  end class
+end function
+
+

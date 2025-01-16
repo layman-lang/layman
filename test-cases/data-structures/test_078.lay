@@ -1,0 +1,27 @@
+# test case 78
+# description: Write a program that defines a custom data structure for a 'Book' with properties for title, author, and year published, then creates a list of books and implements a search function to find a book by title.
+
+define struct Book with
+  title as String,
+  author as String,
+  year as Number
+
+define function search_book that takes books as List of Book and query as String and returns Book
+  for each book in books do
+    if book.title is query then
+      return book
+    end if
+  end for
+  
+  # return dummy
+  return new Book with title as "Not Found", author as "", year as 0
+
+# create books
+the variable book1 is a new Book with title which is "The Hobbit", author which is "Tolkien", year which is 1937
+the variable book2 is a new Book with title which is "1984", author which is "Orwell", year which is 1949
+
+the variable library is call function create_list with argument book1 and argument book2
+
+the variable found is call function search_book with argument library and argument "1984"
+print found.title
+print found.author

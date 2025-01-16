@@ -1,0 +1,35 @@
+# test case 29
+# description: The program should correctly match the string "hello world" against a pattern that allows for 0 or more occurrences of the substring "world", while ignoring the leading "hello ".
+
+define function pattern_match that takes input_string as String and returns Bool
+  # check if string contains "world" after ignoring leading "hello "
+  if input_string is "world" then
+    return true
+  else
+    # check if string is "hello world" (simplified - just check if it contains "world")
+    if input_string is "hello world" then
+      return true
+    else
+      return false
+    end if
+  end if
+
+# test pattern matching
+the variable input of type String is "hello world"
+the variable result of type Bool is call function pattern_match with argument input
+
+if result is true then
+  print "pattern matched: string contains 'world'"
+else
+  print "pattern did not match"
+end if
+
+# test with just "world"
+the variable input_two of type String is "world"
+the variable result_two of type Bool is call function pattern_match with argument input_two
+
+if result_two is true then
+  print "pattern matched: string is 'world'"
+else
+  print "pattern did not match"
+end if

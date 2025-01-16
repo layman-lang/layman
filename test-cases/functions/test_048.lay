@@ -1,0 +1,26 @@
+# test case 48
+# description: Test Case 48: Define and Use Type Definitions - The test will create a new type definition for an integer value and then use it to declare a variable with that type, ensuring the correct data type is enforced.
+
+# define and use type definitions (simulated using Number type)
+# declare a variable with explicit type
+the variable the_variable of type Number is 5
+
+# function to add numbers
+define function add_numbers that takes number as Number and returns Number
+  the variable result of type Number is number plus 1
+  return result
+
+# test the function with different integer values
+the variable test_integer of type Number is 0
+if test_integer is 0 then
+  print "0"
+else
+  the variable result of type Number is call function add_numbers with argument test_integer
+  print the variable result
+end if
+
+# test with non-0 value
+the variable count of type Number is 5
+the variable result_count of type Number is call function add_numbers with argument count
+print the variable the_variable
+print the variable result_count

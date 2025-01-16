@@ -1,0 +1,19 @@
+# test case 84
+# description: Here is a possible test case description for Test Case Number 84:
+
+# Write a function that takes 2 integers as input and returns their sum, then call this function with the inputs 5 and 7 to verify the result.
+
+define function add_numbers that takes a as Number and b as Number and returns Number
+  return a plus b
+
+# call function with inputs 5 and 7
+the variable sum of type Number is call function add_numbers with argument 5 and argument 7
+
+# verify result is 12
+if sum is 12 then
+  print "function correctly adds numbers"
+else
+  print "function did not work correctly"
+end if
+
+print the variable sum

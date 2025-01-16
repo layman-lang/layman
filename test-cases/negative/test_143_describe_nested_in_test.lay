@@ -1,0 +1,10 @@
+# negative test: describe nested in test
+# expected: parser might reject this or handle gracefully
+
+test 'my test'
+  describe 'nested suite'
+    expect 5 is 5
+  end describe
+end test
+
+

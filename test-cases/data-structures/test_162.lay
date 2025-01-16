@@ -1,0 +1,33 @@
+# test case 162
+# description: Verify list creation, indexing, iteration, and empty list printing.
+
+test "list creation and indexing"
+    the variable my_list is a list containing 10, 20, 30
+    
+    print my_list
+    
+    the variable first_item is item 1 of my_list
+    expect first_item is 10
+    
+    the variable second_item is item 2 of my_list
+    expect second_item is 20
+    
+    the variable third_item is item 3 of my_list
+    expect third_item is 30
+end test
+
+test "list iteration"
+    the variable numbers is a list containing 1, 2, 3
+    the variable sum is 0
+    
+    for each num in numbers do
+        the variable sum is sum + num
+    end for
+    
+    expect sum is 6
+end test
+
+test "empty list"
+    the variable empty is a list
+    print empty
+end test

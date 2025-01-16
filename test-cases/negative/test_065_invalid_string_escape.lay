@@ -1,0 +1,6 @@
+# negative test: invalid string escape sequence
+# expected: lexer should handle this gracefully
+
+the variable x of type String is 'hello\nworld'
+
+

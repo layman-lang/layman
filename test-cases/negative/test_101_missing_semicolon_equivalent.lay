@@ -1,0 +1,6 @@
+# negative test: statements that should be separated but aren't
+# expected: parser should handle this gracefully or reject
+
+the variable x of type Number is 5 the variable y of type Number is 10
+
+

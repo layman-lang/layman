@@ -1,0 +1,8 @@
+# negative test: if statement without condition
+# expected: parser should reject this
+
+if then
+  print 'hello'
+end if
+
+

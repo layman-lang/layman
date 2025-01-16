@@ -1,0 +1,7 @@
+# negative test case: missing 'is' keyword in assignment
+# expected error: Expected 'is' or 'equals' for assignment
+# description: Tests that assignment requires 'is' or 'equals'
+
+the variable x of type Number 5
+
+

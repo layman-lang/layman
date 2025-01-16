@@ -1,0 +1,10 @@
+# negative test: catch before try
+# expected: parser should reject this
+
+catch error
+  print error
+try
+  throw 'error'
+end try
+
+

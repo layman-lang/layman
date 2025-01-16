@@ -1,0 +1,5 @@
+define function say_hello
+    print "Hello from Layman!"
+end function
+
+call say_hello

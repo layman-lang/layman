@@ -1,0 +1,27 @@
+# test case 14
+# description: Verify error handling with try-catch
+
+define function fetch_resource that takes resource_id as Number and returns Number
+  if resource_id is 0 then
+    throw "Invalid resource ID"
+  end if
+  return resource_id plus 10
+
+define function process_resources that takes dummy as Number and returns Void
+  try
+    print "Fetching resource 1..."
+    the variable res1 of type Number is call function fetch_resource with argument 1
+    print "Resource 1 fetched"
+    
+    print "Fetching resource 0 (should fail)..."
+    the variable res0 of type Number is call function fetch_resource with argument 0
+    
+    print "This should not be printed"
+  catch error
+    print "Caught error:"
+    print error
+  end try
+
+print "Starting process..."
+call function process_resources with argument 0
+print "Process completed"

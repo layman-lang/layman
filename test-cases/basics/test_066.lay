@@ -1,0 +1,8 @@
+# test case 66
+# description: demonstrate conditional messages with a simple loop
+
+ the variable storage of type Number is 5
+ print the variable storage
+ if storage is 5 then print "key exists" else print "key does not exist"
+
+ print "looping"

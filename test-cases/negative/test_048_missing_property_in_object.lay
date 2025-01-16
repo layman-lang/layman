@@ -1,0 +1,9 @@
+# negative test: missing required property in object
+# expected: error should be thrown
+
+define class Person
+  the property name of type String
+
+the variable person of type Person is a new Person with
+
+

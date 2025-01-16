@@ -1,0 +1,30 @@
+# test case 99
+# description: Here is the test case description:
+
+"Test that adding 2 new design elements to an existing collection results in a single, unified set of designs with no duplicate elements."
+
+# simulate adding design elements to a collection
+the variable existing_designs of type Number is 1
+the variable new_design_one of type Number is 2
+the variable new_design_two of type Number is 3
+
+# add new designs to collection
+the variable total_designs of type Number is existing_designs plus new_design_one
+the variable total_designs of type Number is total_designs plus new_design_two
+
+# verify no duplicates (each design is unique)
+if total_designs is 6 then
+  print "single unified set of designs with no duplicate elements"
+  print "total designs:"
+  print the variable total_designs
+else
+  print "duplicate design elements found"
+end if
+
+# verify collection is unified
+the variable unified_count of type Number is 3
+if total_designs is existing_designs plus new_design_one plus new_design_two then
+  print "collection is unified"
+else
+  print "collection is not unified"
+end if

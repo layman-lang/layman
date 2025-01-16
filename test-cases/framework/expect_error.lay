@@ -1,0 +1,16 @@
+# expect error function - expects code to throw specific error
+# pure english syntax following goals.mdc
+
+define function assert_error that takes code_block and expected_message and returns Void
+  try
+    call code_block
+    throw 'expected error but code executed successfully'
+  catch error
+    if error message is expected_message then
+      # test passed - error message matches
+    else
+      throw concatenate 'expected error message ' with expected_message with ' but got ' with error message
+    end if
+  end try
+
+

@@ -1,0 +1,35 @@
+define type Status as either Active or Inactive
+
+define type Shape as either Circle with radius of type Number or Rectangle with width of type Number and height of type Number
+
+define variable s1 as Shape
+s1 = call function Circle with argument 10
+
+print "Testing Circle:"
+inspect s1
+  case Circle do
+    print "It is a circle with radius"
+    print radius
+  case Rectangle do
+    print "It is a rectangle"
+
+define variable s2 as Shape
+s2 = call function Rectangle with 5 and 20
+
+print "Testing Rectangle:"
+inspect s2
+  case Circle do
+    print "Circle"
+  case Rectangle do
+    print "Rectangle with area"
+    print width * height
+
+define variable st as Status
+st = call function Active
+
+print "Testing Status:"
+inspect st
+  case Active do
+    print "Active"
+  case Inactive do
+    print "Inactive"

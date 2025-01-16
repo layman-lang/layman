@@ -1,0 +1,9 @@
+# negative test: function requiring arguments called without them
+# expected: type checker should catch this
+
+define function add that takes x and y and returns Number
+  return x plus y
+
+the variable result of type Number is call add
+
+

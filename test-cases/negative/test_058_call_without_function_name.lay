@@ -1,0 +1,7 @@
+# negative test: call statement without function name
+# expected: parser should reject this
+
+call
+  print 'hello'
+
+

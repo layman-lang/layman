@@ -1,0 +1,9 @@
+# negative test: function call without 'with' keyword
+# expected: parser should reject this
+
+define function add that takes x and y and returns Number
+  return x plus y
+
+the variable result of type Number is call add 5 and 10
+
+

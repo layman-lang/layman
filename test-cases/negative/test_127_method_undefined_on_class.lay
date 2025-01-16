@@ -1,0 +1,12 @@
+# negative test: calling method that doesn't exist on class
+# expected: type checker should catch this
+
+define class Person
+  the property name of type String
+
+the variable person of type Person is a new Person with
+  name is 'John'
+
+call person dot getAge
+
+

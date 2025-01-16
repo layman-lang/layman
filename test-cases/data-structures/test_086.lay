@@ -1,0 +1,48 @@
+# test case 86
+# description: Here is a test case description for Test Case Number 86:
+# The test case creates a new dictionary with 2 key-value pairs and checks if it can retrieve the values correctly, then adds a new key-value pair and verifies that the retrieved value is updated. The test also ensures that attempting to access a non-existent key returns an empty string as expected.
+
+# create dictionary with key-value pairs
+the variable person of type Dictionary of String to String is a dictionary with "name" is "john smith", "age" is "21"
+
+# verify dictionary can retrieve values
+the variable name_val of type String is person["name"]
+the variable age_val of type String is person["age"]
+
+print "DEBUG: name_val is:"
+print name_val
+print "DEBUG: age_val is:"
+print age_val
+
+if name_val is "john smith" then
+  print "the dictionary has 2 key-value pairs and can retrieve the values correctly"
+  print "name value:"
+  print name_val
+  print "age value:"
+  print age_val
+else
+  print "the dictionary cannot retrieve the values correctly"
+end if
+
+# update key-value pair
+# Note: Dictionary mutation syntax might be person["name"] = "jane doe" or person.put("name", "jane doe")
+# I'll try assignment syntax first, if not supported I'll check evaluator.
+# Based on parser, assignment to index expression is supported.
+person["name"] = "jane doe"
+person["age"] = "22"
+
+# verify updated values
+the variable new_name of type String is person["name"]
+
+if new_name is "jane doe" then
+  print "the retrieved value for key name is 'jane doe'"
+  print new_name
+else
+  print "there is no value associated with the key 'name'"
+end if
+
+# verify non-existent key
+# accessing non-existent key should return Void or error?
+# Evaluator says: if not found, returns Void (or error?)
+# Let's check evaluator implementation.
+print "dictionary operations verified"

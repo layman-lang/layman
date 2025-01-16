@@ -1,0 +1,28 @@
+# Standard Collections Library
+
+# Map a function over a list
+define function map that takes list, mapper
+    the variable result is call function create_list
+    for each item in list do
+        the variable mapped_item is call function mapper with item
+        call function append with result, mapped_item
+    end for
+    return result
+
+# Filter a list using a predicate
+define function filter that takes list, predicate
+    the variable result is call function create_list
+    for each item in list do
+        if call function predicate with item then
+            call function append with result, item
+        end if
+    end for
+    return result
+
+# Reduce a list to a single value
+define function reduce that takes list, reducer, initial
+    the variable accumulator is initial
+    for each item in list do
+        set accumulator to call function reducer with accumulator, item
+    end for
+    return accumulator

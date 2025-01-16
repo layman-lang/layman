@@ -1,0 +1,8 @@
+# negative test: division operation on strings
+# expected: type checker should catch this
+
+the variable x of type String is 'hello'
+the variable y of type String is 'world'
+the variable z of type String is x divided by y
+
+

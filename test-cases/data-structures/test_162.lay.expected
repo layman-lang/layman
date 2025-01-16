@@ -1,0 +1,8 @@
+running test: list creation and indexing
+[10, 20, 30]
+test passed: list creation and indexing
+running test: list iteration
+test passed: list iteration
+running test: empty list
+[]
+test passed: empty list

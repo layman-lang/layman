@@ -1,0 +1,9 @@
+define function add that takes a as Number and b as Number
+    return a plus b
+end function
+
+define function subtract that takes a as Number and b as Number
+    return a minus b
+end function
+
+the constant PI is 3.14159

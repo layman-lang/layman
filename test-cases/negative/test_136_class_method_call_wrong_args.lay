@@ -1,0 +1,11 @@
+# negative test: method call with wrong number of arguments
+# expected: type checker should catch this
+
+define class Calculator
+  define function add that takes x and y and returns Number
+    return x plus y
+
+the variable calc of type Calculator is a new Calculator with
+call calc dot add with 5
+
+

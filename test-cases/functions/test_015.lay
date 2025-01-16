@@ -1,0 +1,39 @@
+# test case 15
+# description: A store is selling 2 types of TVs, 1 at $250 with a 10% discount for cash payment, and another at $320 without any discount. The test case verifies that the program correctly calculates the final price after applying a 15% sales tax to both TV models.
+
+define function calculate_cash_tv_price that takes cash_tv_price as Number and discount_rate as Number and returns Number
+  # calculate discount: price * discount_rate / 100
+  the variable discount_multiplier of type Number is discount_rate
+  the variable discount_multiplier of type Number is discount_multiplier divided by 100
+  the variable discount_amount of type Number is cash_tv_price times discount_multiplier
+  the variable result of type Number is cash_tv_price minus discount_amount
+  return result
+
+# tv prices
+the variable cash_tv_price of type Number is 250
+the variable retail_tv_price of type Number is 320
+
+# discount and tax rates
+the variable discount_rate of type Number is 10
+the variable sales_tax_rate of type Number is 15
+
+# calculate cash tv price after discount
+the variable cash_tv_price_after_discount of type Number is call function calculate_cash_tv_price with argument cash_tv_price and argument discount_rate
+
+# calculate tax multiplier
+the variable tax_multiplier of type Number is sales_tax_rate
+the variable tax_multiplier of type Number is tax_multiplier divided by 100
+
+# apply sales tax to cash tv
+the variable tax_amount_cash of type Number is cash_tv_price_after_discount times tax_multiplier
+the variable final_price_cash of type Number is cash_tv_price_after_discount plus tax_amount_cash
+
+# apply sales tax to retail tv
+the variable tax_amount_retail of type Number is retail_tv_price times tax_multiplier
+the variable final_price_retail of type Number is retail_tv_price plus tax_amount_retail
+
+# print results
+print "cash tv final price:"
+print the variable final_price_cash
+print "retail tv final price:"
+print the variable final_price_retail

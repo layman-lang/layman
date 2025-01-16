@@ -1,0 +1,20 @@
+# test case 91
+# description: importing a module and using nested loops to combine values
+
+# simulate importing by using a local function and nested loops
+
+import math_helper
+
+# compute a total using nested loops
+ the variable total of type Number is 0
+ the variable i of type Number is 0
+ while i is less than 3 do
+   the variable j of type Number is 0
+   while j is less than 3 do
+     total is total plus call function combine with argument i and argument j
+     j is j plus 1
+   end while
+   i is i plus 1
+ end while
+
+print the variable total

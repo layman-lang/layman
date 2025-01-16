@@ -1,0 +1,27 @@
+# test case 70
+# description: Here is the test case description:
+
+# The program should successfully handle a division by 0 error when attempting to calculate a result and include a clear informative error message in output to inform the user of the issue. The program's attempt to perform the calculation with the provided numbers should fail gracefully without crashing, allowing the user to identify the cause of the problem.
+
+# test division by 0 handling
+the variable number_one of type Number is 10
+the variable number_two of type Number is 0
+the variable number_three of type Number is 5
+
+# check for division by 0
+try
+  the variable result of type Number is number_one divided by number_two
+  print "the result of the calculation is"
+  print the variable result
+catch error
+  print "an error occurred, cannot divide by 0"
+end try
+
+# test normal division
+try
+  the variable normal_result of type Number is number_one divided by number_three
+  print "the result of the calculation is"
+  print the variable normal_result
+catch error
+  print "an error occurred, cannot divide by 0"
+end try

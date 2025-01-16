@@ -1,0 +1,7 @@
+# negative test: for without 'each' keyword
+# expected: error should be thrown
+
+for item in list do
+  print item
+
+

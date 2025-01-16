@@ -1,0 +1,20 @@
+# test case 42
+# description: Test Case 42: "If it's sunny outside, then print 'Go for a walk', otherwise print 'Stay inside'." This test case checks that the programming language handles conditional statements correctly, specifically if/then/otherwise clauses. The test verifies that the output is as expected given different input conditions.
+
+# test conditional statements with different weather conditions
+the variable weather_forecast_one of type String is "sunny"
+the variable weather_forecast_two of type String is "rainy"
+
+# test first forecast: if sunny, go for walk, otherwise stay inside
+if weather_forecast_one is "sunny" then
+  print "Go for a walk"
+else
+  print "Stay inside"
+end if
+
+# test second forecast: if sunny, go for walk, otherwise stay inside
+if weather_forecast_two is "sunny" then
+  print "Go for a walk"
+else
+  print "Stay inside"
+end if

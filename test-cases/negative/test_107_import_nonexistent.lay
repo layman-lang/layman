@@ -1,0 +1,6 @@
+# negative test: importing non-existent file
+# expected: resolver should catch this
+
+import utils from './nonexistent_file.lay'
+
+

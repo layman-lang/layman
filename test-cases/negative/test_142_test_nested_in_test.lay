@@ -1,0 +1,10 @@
+# negative test: test statement nested in another test
+# expected: parser might reject this or handle gracefully
+
+test 'outer test'
+  test 'inner test'
+    expect 5 is 5
+  end test
+end test
+
+

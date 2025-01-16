@@ -1,0 +1,4 @@
+error message: division by zero is not allowed
+division by zero was caught and handled
+normal division result:
+5

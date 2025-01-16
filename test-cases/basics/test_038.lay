@@ -1,0 +1,13 @@
+# test case 38
+# description: I don't see a description for test case number 38. Could you please provide the actual description? I'll help you create a test case description that meets the requirements.
+
+# Basic variable operations test case 38
+# This test demonstrates basic variable declaration, assignment, and arithmetic operations
+
+the variable x of type Number is 5
+the variable y of type Number is 10
+the variable sum of type Number is x plus y
+
+print the variable x
+print the variable y
+print the variable sum

@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/syntax_009_invalid_object_creation.js

@@ -1,0 +1,6 @@
+# negative test: function declaration without body
+# expected: error should be thrown
+
+define function my_function that takes x and returns Number
+
+

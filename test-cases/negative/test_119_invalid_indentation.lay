@@ -1,0 +1,9 @@
+# negative test: inconsistent indentation (should be handled gracefully)
+# expected: parser should handle this or reject
+
+if true then
+ print 'hello'
+  print 'world'
+end if
+
+

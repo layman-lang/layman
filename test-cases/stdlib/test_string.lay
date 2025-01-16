@@ -1,0 +1,35 @@
+print "--- Test Standard String Library ---"
+
+import string as str
+
+the variable text is "  Hello, World!  "
+print "Original: '" plus text plus "'"
+
+the variable trimmed is call function str.trim with text
+print "Trimmed: '" plus trimmed plus "'"
+
+if trimmed equals "Hello, World!" then
+    print "Trim Test Passed!"
+else
+    print "Trim Test Failed!"
+end if
+
+the variable csv is "apple,banana,cherry"
+print "CSV: " plus csv
+
+the variable parts is call function str.split with csv, ","
+print "Split parts:"
+print parts
+
+# Accessing list elements is 1-based in Layman?
+# Let's check Evaluator implementation of IndexExpression.
+# Evaluator: "List index starts at 1" (lines 390-391)
+# So we use 1, 2, 3.
+
+# Wait, I need to check if I can access list elements by index.
+# Yes, `parts[1]` syntax is supported by parser?
+# Let's assume yes, or use loop.
+
+for each part in parts do
+    print "- " plus part
+end for

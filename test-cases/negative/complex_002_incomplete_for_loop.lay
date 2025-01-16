@@ -1,0 +1,7 @@
+# negative test case: incomplete for loop
+# expected error: Missing 'do' clause in for each loop
+# description: Tests that for loops must have complete structure
+
+for each item in list
+
+

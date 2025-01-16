@@ -1,0 +1,41 @@
+# test case 79
+# description: Here is a possible test case description for Layman Programming Language Test Case Number 79:
+
+# The test case will validate that the design operation correctly generates a list of all unique room types in a given furniture catalog, without including any duplicates or errors. The test will verify that the output can be accurately sorted alphabetically and displayed in descending order by size, demonstrating correct sorting functionality for design operations.
+
+define function get_room_type that takes item_name as String and returns String
+  # simulate getting room type from item name
+  if item_name is "chair" then
+    return "living room"
+  else if item_name is "bed" then
+    return "bedroom"
+  else
+    return "other"
+  end if
+
+define function add_to_room_types that takes room_type as String and returns Void
+  print "added room type:"
+  print the variable room_type
+
+# simulate furniture catalog
+the variable item_one_name of type String is "chair"
+the variable item_two_name of type String is "bed"
+the variable item_three_name of type String is "table"
+
+# process each item in catalog
+the variable room_type_one of type String is call function get_room_type with argument item_one_name
+if room_type_one is not "" then
+  call function add_to_room_types with argument room_type_one
+end if
+
+the variable room_type_two of type String is call function get_room_type with argument item_two_name
+if room_type_two is not "" then
+  call function add_to_room_types with argument room_type_two
+end if
+
+the variable room_type_three of type String is call function get_room_type with argument item_three_name
+if room_type_three is not "" then
+  call function add_to_room_types with argument room_type_three
+end if
+
+print "room types processing completed"

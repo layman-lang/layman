@@ -1,0 +1,7 @@
+# negative test: method call on non-object
+# expected: error should be thrown
+
+the variable x of type Number is 5
+call x dot greet
+
+

@@ -1,0 +1,50 @@
+# test case 98
+# description: Test Case 98: Validate Successful Login with Valid Credentials - The system should validate a user's login attempt using valid username and password credentials to ensure successful access to the dashboard.
+
+define function validate_login that takes username as String and password as String and returns Boolean
+  # simulate checking credentials
+  the variable valid_username of type String is "john_doe"
+  the variable valid_password of type String is "password123"
+  
+  if username is valid_username and password is valid_password then
+    return true
+  else
+    return false
+  end if
+
+define function grant_access that takes account_name as String and access_status as String and returns Void
+  print "access granted to:"
+  print the variable account_name
+  print "access status:"
+  print the variable access_status
+
+define function add_numbers that takes a as Number and b as Number and returns Number
+  return a plus b
+
+# test login validation
+the variable username of type String is "john_doe"
+the variable password of type String is "password123"
+
+the variable login_result of type Boolean is call function validate_login with argument username and argument password
+
+if login_result is true then
+  print "successful login to the dashboard"
+  call function grant_access with argument username and argument "access granted"
+else
+  print "invalid login attempt to the console"
+end if
+
+# test with numbers
+the variable a of type Number is 1
+the variable a of type Number is a plus 2
+the variable b of type Number is 3
+the variable b of type Number is b times 4
+
+the variable sum_result of type Number is call function add_numbers with argument a and argument b
+
+if sum_result is greater than 0 then
+  print "the sum of a and b:"
+  print the variable sum_result
+else
+  print "an error message to the console"
+end if

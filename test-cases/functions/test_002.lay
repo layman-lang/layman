@@ -1,0 +1,40 @@
+# test case 2
+# description: As a program processes weather forecasts for a given day, it must correctly predict whether outdoor activities such as swimming are suitable based on the temperature and humidity levels if they are above or below 75 degrees Fahrenheit; otherwise, the forecast will mention alternative activities. The test verifies that the program responds with the correct recommendation when the conditions meet these criteria.
+
+define function check_temperature that takes temperature as Number and activity as String and returns Bool
+  if temperature is less than 60 then
+    print "swimming is not recommended due to cold weather"
+    return false
+  else if temperature is greater than 74 then
+    print "the activity is suitable for warm weather"
+    return true
+  else
+    print "an error in the temperature reading"
+    return false
+  end if
+
+define function current_temperature that takes dummy as Number and returns Number
+  return 70
+
+define function current_humidity that takes dummy as Number and returns String
+  return "high"
+
+# get current weather conditions
+the variable dummy_value of type Number is 0
+the variable temperature of type Number is call function current_temperature with argument dummy_value
+the variable humidity_level of type String is call function current_humidity with argument dummy_value
+
+# determine if swimming is suitable
+if temperature is greater than 74 then
+  if humidity_level is "very high" then
+    print "alternative activities for warm weather"
+  else
+    print "swimming is suitable for the day"
+  end if
+else
+  the variable activity of type String is "swimming"
+  the variable is_suitable of type Bool is call function check_temperature with argument temperature and argument activity
+  if is_suitable is false then
+    print "the activity is not suitable for low temperatures"
+  end if
+end if

@@ -1,0 +1,26 @@
+# test case 52
+# description: Test Case 52: Validate Pipeline Operation - Process a list of numbers, first adding 2 to each number and then multiplying by 3.
+
+define function process_list that takes input_list as List of Number and returns List of Number
+  the variable result_list of type List of Number is an empty list
+  
+  for each number in input_list do
+    # pipeline: add 2, then multiply by 3
+    the variable step_one of type Number is number plus 2
+    the variable step_two of type Number is step_one times 3
+    result_list.add(step_two)
+  end for
+  
+  return result_list
+
+# test with sample numbers
+the variable input_numbers of type List of Number is a list containing 5, 10
+
+# process through pipeline
+the variable pipeline_results of type List of Number is call function process_list with argument input_numbers
+
+# verify: (5 + 2) * 3 = 21, (10 + 2) * 3 = 36
+print "input:"
+print input_numbers
+print "pipeline results:"
+print pipeline_results

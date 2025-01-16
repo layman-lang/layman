@@ -1,0 +1,6 @@
+# negative test: call statement without any function identifier
+# expected: parser should reject this
+
+call with 5 and 10
+
+

@@ -1,0 +1,7 @@
+# negative test: function declaration without function name
+# expected: parser should reject this
+
+define function that takes x and y and returns Number
+  return x plus y
+
+

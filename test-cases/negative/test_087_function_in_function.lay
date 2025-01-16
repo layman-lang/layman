@@ -1,0 +1,10 @@
+# negative test: function definition inside another function
+# expected: parser should reject this
+
+define function outer that takes nothing and returns Void
+  define function inner that takes nothing and returns Void
+    print 'inner'
+  end function
+end function
+
+

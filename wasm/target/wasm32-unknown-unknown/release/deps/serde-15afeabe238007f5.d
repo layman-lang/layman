@@ -1,0 +1,14 @@
+/Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/deps/serde-15afeabe238007f5.d: /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/build/serde-c4e53630baac0369/out/private.rs
+
+/Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/deps/libserde-15afeabe238007f5.rlib: /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/build/serde-c4e53630baac0369/out/private.rs
+
+/Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/deps/libserde-15afeabe238007f5.rmeta: /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/build/serde-c4e53630baac0369/out/private.rs
+
+/Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/0xjovi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/build/serde-c4e53630baac0369/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/0xjovi/Documents/laymen/wasm/target/wasm32-unknown-unknown/release/build/serde-c4e53630baac0369/out

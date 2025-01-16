@@ -1,0 +1,8 @@
+# negative test: try block without catch
+# expected: parser should reject this or require catch
+
+try
+  throw 'error'
+end try
+
+

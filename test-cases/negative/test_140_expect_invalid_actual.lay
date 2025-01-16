@@ -1,0 +1,7 @@
+# negative test: expect with invalid actual value expression
+# expected: parser should reject this
+
+expect
+  is 5
+
+

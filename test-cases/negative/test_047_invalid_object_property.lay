@@ -1,0 +1,7 @@
+# negative test: invalid property in object creation
+# expected: error should be thrown
+
+the variable person of type Person is a new Person with
+  invalid_property is 'value'
+
+

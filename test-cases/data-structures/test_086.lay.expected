@@ -1,0 +1,8 @@
+the dictionary has two key-value pairs and can retrieve the values correctly
+name value:
+john smith
+age value:
+21
+the retrieved value for key name is 'jane doe'
+jane doe
+dictionary operations verified

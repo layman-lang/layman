@@ -1,0 +1,36 @@
+# test case 62
+# description: The program should take 2 integers as input and return their greatest common divisor (GCD), using a conditional statement to determine whether to use the Euclidean algorithm for odd or even numbers. The GCD calculation must be deterministic and produce the same result regardless of the order of inputs, and must handle edge cases such as 0 inputs correctly.
+
+define function gcd that takes a as Number and b as Number and returns Number
+  # handle edge case: if either number is 0, return the other
+  if a is 0 then
+    return b
+  end if
+  if b is 0 then
+    return a
+  end if
+  
+  # use euclidean algorithm
+  the variable temp_a of type Number is a
+  the variable temp_b of type Number is b
+  
+  while temp_b is not 0 do
+    the variable remainder of type Number is temp_a modulo temp_b
+    the variable temp_a of type Number is temp_b
+    the variable temp_b of type Number is remainder
+  end while
+  
+  return temp_a
+
+# test with 2 numbers
+the variable first_number of type Number is 12
+the variable second_number of type Number is 18
+the variable result of type Number is call function gcd with argument first_number and argument second_number
+
+# verify result is 6
+if result is 6 then
+  print "gcd is correct"
+else
+  print "gcd calculation failed"
+end if
+print the variable result

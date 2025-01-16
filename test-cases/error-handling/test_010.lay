@@ -1,0 +1,31 @@
+# test case 10
+# description: Demonstrate real error handling using try-catch and throw statements.
+
+define function get_age that takes person as String and returns Number
+  if person is "Invalid" then
+    throw "Invalid person name provided"
+  end if
+  return 30
+
+print "Testing error handling..."
+
+# Test 1: Catching an error
+try
+  print "Attempting to get age for Invalid person..."
+  the variable age of type Number is call function get_age with argument "Invalid"
+  print "This should not be printed"
+catch error
+  print "Caught expected error:"
+  print error
+end try
+
+# Test 2: No error
+try
+  print "Getting age for John..."
+  the variable valid_age of type Number is call function get_age with argument "John"
+  print "Age is:"
+  print valid_age
+catch error
+  print "Unexpected error:"
+  print error
+end try

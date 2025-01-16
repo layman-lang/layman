@@ -1,0 +1,36 @@
+# test case 81
+# description: The test case will create and assign values to 2 variables using a simple programming language, ensuring that variable declarations are properly utilized and assignments are accurate. The test will validate that variable names can be assigned integer values without causing syntax errors. The test aims to ensure the language's parser correctly handles basic variable operations.
+
+# create and assign variables
+the variable name of type Number is 5
+the variable count of type Number is 0
+
+# test variable operations
+the variable count of type Number is count plus 1
+
+# test function call
+define function add_numbers that takes a as Number and b as Number and returns Number
+  the variable result of type Number is a plus b
+  return result
+
+the variable a_value of type Number is 3
+the variable b_value of type Number is 7
+the variable result of type Number is call function add_numbers with argument a_value and argument b_value
+
+# test conditional
+if result is greater than 0 then
+  the variable action of type String is "perform action"
+  print the variable action
+else
+  the variable other_action of type String is "perform other action"
+  print the variable other_action
+end if
+
+# test variable assignment
+the variable item_type of type String is "item"
+print the variable item_type
+
+# test person name retrieval
+the variable person_name of type String is "John"
+print the variable person_name
+print the variable name

@@ -1,0 +1,7 @@
+# negative test: else without if
+# expected: error should be thrown
+
+else
+  print 'hello'
+
+

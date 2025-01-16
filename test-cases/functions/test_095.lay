@@ -1,0 +1,76 @@
+# test case 95
+# description: The test case will calculate the total cost of renting a house for 1 year by applying an initial deposit and monthly rent, then checking if the result matches a predefined expected value. The test scenario should account for varying amounts of initial deposits and monthly rents to ensure the program handles these variations correctly.
+
+define function calculate_total_cost that takes amount as Number and rent as Number and returns Number
+  # calculate cost: amount + (rent * 12)
+  the variable rent_times_twelve of type Number is rent times 12
+  the variable cost of type Number is amount plus rent_times_twelve
+  return cost
+
+# test with different deposit amounts and monthly rents
+the variable expected_value of type Number is 12000
+the variable initial_deposit_one of type Number is 1000
+the variable initial_deposit_two of type Number is 2000
+the variable initial_deposit_three of type Number is 3000
+
+the variable monthly_rent_one of type Number is 500
+the variable monthly_rent_two of type Number is 800
+the variable monthly_rent_three of type Number is 1000
+
+# calculate total cost for first deposit and first rent
+the variable total_cost_one of type Number is call function calculate_total_cost with argument initial_deposit_one and argument monthly_rent_one
+
+# calculate total cost for first deposit and second rent
+the variable total_cost_two of type Number is call function calculate_total_cost with argument initial_deposit_one and argument monthly_rent_two
+
+# calculate total cost for first deposit and third rent
+the variable total_cost_three of type Number is call function calculate_total_cost with argument initial_deposit_one and argument monthly_rent_three
+
+# calculate total cost for second deposit and first rent
+the variable total_cost_four of type Number is call function calculate_total_cost with argument initial_deposit_two and argument monthly_rent_one
+
+# calculate total cost for second deposit and second rent
+the variable total_cost_five of type Number is call function calculate_total_cost with argument initial_deposit_two and argument monthly_rent_two
+
+# calculate total cost for second deposit and third rent
+the variable total_cost_six of type Number is call function calculate_total_cost with argument initial_deposit_two and argument monthly_rent_three
+
+# calculate total cost for third deposit and first rent
+the variable total_cost_seven of type Number is call function calculate_total_cost with argument initial_deposit_three and argument monthly_rent_one
+
+# calculate total cost for third deposit and second rent
+the variable total_cost_eight of type Number is call function calculate_total_cost with argument initial_deposit_three and argument monthly_rent_two
+
+# calculate total cost for third deposit and third rent
+the variable total_cost_nine of type Number is call function calculate_total_cost with argument initial_deposit_three and argument monthly_rent_three
+
+# verify results
+print "total cost 1:"
+print the variable total_cost_one
+print "total cost 2:"
+print the variable total_cost_two
+print "total cost 3:"
+print the variable total_cost_three
+print "total cost 4:"
+print the variable total_cost_four
+print "total cost 5:"
+print the variable total_cost_five
+print "total cost 6:"
+print the variable total_cost_six
+print "total cost 7:"
+print the variable total_cost_seven
+print "total cost 8:"
+print the variable total_cost_eight
+print "total cost 9:"
+print the variable total_cost_nine
+
+# check if any match expected value
+if total_cost_one is expected_value then
+  print "total cost 1 matches expected value"
+else if total_cost_two is expected_value then
+  print "total cost 2 matches expected value"
+else if total_cost_three is expected_value then
+  print "total cost 3 matches expected value"
+else
+  print "total cost does not match expected value"
+end if

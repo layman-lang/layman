@@ -1,0 +1,8 @@
+# negative test: catch without try
+# expected: parser should reject this
+
+catch error
+  print error
+end catch
+
+

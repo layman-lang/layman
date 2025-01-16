@@ -1,0 +1,36 @@
+# test case 97
+# description: The program should process a list of numbers, performing basic arithmetic operations to calculate the sum, average, and median of a given set of input values, ensuring accurate results for different input scenarios. The test case will validate that the program produces correct output when provided with a diverse set of inputs.
+
+# process a list of numbers: [5, 10, 15, 20, 25]
+the variable number_one of type Number is 5
+the variable number_two of type Number is 10
+the variable number_three of type Number is 15
+the variable number_four of type Number is 20
+the variable number_five of type Number is 25
+
+# calculate sum
+the variable sum of type Number is 0
+the variable sum of type Number is sum plus number_one
+the variable sum of type Number is sum plus number_two
+the variable sum of type Number is sum plus number_three
+the variable sum of type Number is sum plus number_four
+the variable sum of type Number is sum plus number_five
+
+# calculate average
+the variable count of type Number is 5
+the variable average of type Number is sum divided by count
+
+# calculate median (middle value when sorted: 15)
+the variable median of type Number is number_three
+
+# print results
+print "sum:"
+print the variable sum
+print "average:"
+print the variable average
+if count is 5 then
+  print "median:"
+  print the variable median
+else
+  print "median: not available"
+end if

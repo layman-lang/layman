@@ -1,0 +1,28 @@
+# test case 28
+# description: Test Case 28: Define an Enum Type and Verify Its Usage - Create a program that defines an enum type called 'Color' with values 'Red', 'Green', and 'Blue'. Then, use this enum type to declare a variable 'myColor' and assign it the value 'Green', and finally verify that the declared variable is of type 'Color'.
+
+# define enum values as constants
+the variable color_red of type String is "red"
+the variable color_green of type String is "green"
+the variable color_blue of type String is "blue"
+
+# declare a variable called my_color and assign it the value green
+the variable my_color of type String is color_green
+
+# verify that the declared variable is of type color (string representing color)
+if my_color is color_green then
+  print "the variable my_color is green"
+else
+  print "the variable my_color is something else"
+end if
+
+# verify the variable can be compared to other color values
+if my_color is color_red then
+  print "the color is red"
+else if my_color is color_green then
+  print "the color is green"
+else if my_color is color_blue then
+  print "the color is blue"
+else
+  print "the color is unknown"
+end if

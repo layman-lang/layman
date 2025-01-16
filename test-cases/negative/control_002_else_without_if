@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node test-cases/negative/control_002_else_without_if.js

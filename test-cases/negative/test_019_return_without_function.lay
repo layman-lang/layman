@@ -1,0 +1,6 @@
+# negative test: return statement outside function
+# expected: error should be thrown
+
+return 5
+
+

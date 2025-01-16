@@ -1,0 +1,38 @@
+# test case 76
+# description: Here is a possible test case description for layman programming language test case number 76:
+
+# The test calculates the sum of 2 numbers and checks if the result matches the expected value, demonstrating basic mathematical operations with variables.
+
+define function add_numbers that takes x as Number and y as Number and returns Number
+  return x plus y
+
+define function calculate_average that takes item as Number and total as Number and returns Number
+  if total is not 0 then
+    return item divided by total
+  else
+    return 0
+  end if
+
+# test sum calculation
+the variable sum of type Number is 0
+the variable x of type Number is 5
+the variable y of type Number is 3
+
+the variable result of type Number is call function add_numbers with argument x and argument y
+the variable result of type Number is result plus sum
+
+# verify result
+if result is 8 then
+  print "the value of result:"
+  print the variable result
+else
+  print "incorrect"
+end if
+
+# test average calculation
+the variable item_value of type Number is 10
+the variable total_value of type Number is 2
+the variable average of type Number is call function calculate_average with argument item_value and argument total_value
+
+print "the value of the variable average:"
+print the variable average

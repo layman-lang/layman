@@ -1,0 +1,25 @@
+# test case 63
+# description: The program is expected to execute a series of iterations using both for loops and while statements, with each iteration incrementing a counter variable until it reaches 10. The test case verifies that the program produces the correct output sequence in response to these iterations, including handling edge cases such as when the loop condition becomes false prematurely.
+
+# initialize counter
+the variable count of type Number is 0
+
+# use while loop to iterate until count reaches 10
+while count is less than 10 do
+  the variable count of type Number is count plus 1
+  print the variable count
+end while
+
+# use a second counter for additional iterations
+the variable iteration of type Number is 1
+while iteration is less than or equal to 10 do
+  print the variable iteration
+  the variable iteration of type Number is iteration plus 1
+end while
+
+# verify final count is 10
+if count is 10 then
+  print "iterations completed correctly"
+else
+  print "iterations did not complete correctly"
+end if

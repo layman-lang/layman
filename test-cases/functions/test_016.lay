@@ -1,0 +1,21 @@
+# test case 16
+# description: Test Case 16: "Calculate Total Cost" - Write a program that takes 2 numbers as input and returns their sum, then write another program that takes the same 2 numbers as input and returns their difference. The first program should be deterministic but return an incorrect result (i.e. the user inputs correct values but gets a wrong answer), while the second program should work correctly.
+
+define function add_nums that takes a as Number and b as Number and returns Number
+  return a plus b
+end function
+
+define function sub_nums that takes a as Number and b as Number and returns Number
+  return b minus a
+end function
+
+the variable num1 of type Number is 20
+the variable num2 of type Number is 30
+
+the variable sum of type Number is call function add_nums with argument num1 and argument num2
+print "the sum is"
+print sum
+
+the variable diff of type Number is call function sub_nums with argument num1 and argument num2
+print "the difference is"
+print diff

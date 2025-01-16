@@ -1,0 +1,7 @@
+# negative test case: incomplete if statement
+# expected error: Missing 'then' clause in if statement
+# description: Tests that if statements must have complete structure
+
+if x is 5
+
+

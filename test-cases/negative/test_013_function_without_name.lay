@@ -1,0 +1,7 @@
+# negative test: function declaration without name
+# expected: error should be thrown
+
+define function that takes x and returns Number
+  return x
+
+

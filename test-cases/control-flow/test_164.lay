@@ -1,0 +1,16 @@
+# test case 164
+# description: Regression test for nested while loops.
+
+the variable outer of type Number is 0
+while outer is less than 5 do
+  the variable inner of type Number is 0
+  while inner is less than 5 do
+    the variable inner of type Number is inner plus 1
+  end while
+  the variable outer of type Number is outer plus 1
+end while
+
+print "done"
+
+define function myfunc that takes x as Number and returns Number
+  return x

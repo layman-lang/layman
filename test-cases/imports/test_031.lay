@@ -1,0 +1,48 @@
+# test case 31
+# description: A program should import an existing module named "math_module" and then use its functions to calculate the square root of a number to ensure it works correctly with imported modules.
+
+import math_module
+
+# simulate importing and using math functions
+the variable number_one of type Number is 1
+the variable number_four of type Number is 4
+the variable number_nine of type Number is 9
+
+# calculate square roots
+the variable sqrt_one of type Number is call function get_square_root with argument number_one
+the variable sqrt_four of type Number is call function get_square_root with argument number_four
+the variable sqrt_nine of type Number is call function get_square_root with argument number_nine
+
+# process each value
+the variable value_one of type Number is sqrt_one
+if value_one is greater than 0 then
+  the variable result_one of type Number is value_one times 2
+  print "plus number and the square root of it times 2:"
+  print the variable result_one
+else
+  the variable result_one of type Number is value_one times 3
+  print "minus number and the square root of it times 3:"
+  print the variable result_one
+end if
+
+the variable value_two of type Number is sqrt_four
+if value_two is greater than 0 then
+  the variable result_two of type Number is value_two times 2
+  print "plus number and the square root of it times 2:"
+  print the variable result_two
+else
+  the variable result_two of type Number is value_two times 3
+  print "minus number and the square root of it times 3:"
+  print the variable result_two
+end if
+
+the variable value_three of type Number is sqrt_nine
+if value_three is greater than 0 then
+  the variable result_three of type Number is value_three times 2
+  print "plus number and the square root of it times 2:"
+  print the variable result_three
+else
+  the variable result_three of type Number is value_three times 3
+  print "minus number and the square root of it times 3:"
+  print the variable result_three
+end if

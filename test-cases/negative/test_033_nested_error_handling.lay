@@ -1,0 +1,13 @@
+# negative test: nested try-catch incorrectly
+# expected: error should be thrown or handled correctly
+# this test should execute and throw an error (which is expected for negative test)
+
+try
+  try
+    throw 'inner error'
+  catch error
+    throw 'outer error'
+  end try
+catch error
+  print error
+end try

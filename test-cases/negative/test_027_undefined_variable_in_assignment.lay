@@ -1,0 +1,6 @@
+# negative test: using undefined variable in assignment
+# expected: type error or runtime error
+
+the variable x of type Number is undefined_var
+
+

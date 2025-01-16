@@ -1,0 +1,12 @@
+# test case 22
+# description: calculate average grade if at least 3 students have passed
+
+ the variable passed_count of type Number is 3
+ the variable total_score of type Number is 90
+
+ if passed_count is greater than or equal to 3 then
+  the variable average of type Number is total_score divided by passed_count
+  print the variable average
+ else
+  print "no 1 has passed"
+ end if

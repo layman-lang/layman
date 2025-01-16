@@ -1,0 +1,7 @@
+# negative test: object creation without type
+# expected: parser should reject this
+
+the variable person is a new with
+  name is 'John'
+
+

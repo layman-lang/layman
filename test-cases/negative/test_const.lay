@@ -1,0 +1,19 @@
+print "--- Test Immutability ---"
+
+# 1. Constant
+define constant pi is 3.14159
+print "Pi is"
+print pi
+
+# 2. Variable (Mutable)
+define variable count is 0
+print "Count is"
+print count
+
+set count to 1
+print "Count is now"
+print count
+
+# 3. Invalid Reassignment (Should Fail)
+print "Attempting to change Pi..."
+set pi to 3.14

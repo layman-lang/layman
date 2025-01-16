@@ -1,0 +1,6 @@
+# negative test: break statement outside loop
+# expected: parser should reject this
+
+break
+
+

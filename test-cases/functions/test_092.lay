@@ -1,0 +1,40 @@
+# test case 92
+# description: Layman Programming Language Test Case 92: Verify that a pipeline operation with 3 consecutive stages correctly combines values from each stage to produce an output value. The test should create a pipeline with source, transform, and sink stages, feed in some initial data, and check that the final output matches the expected result.
+
+define function get_age that takes person as Number and returns Number
+  return person
+
+define function update_status that takes person as Number and status as String and returns Void
+  print "person status updated"
+
+define function calculate_balance that takes account as Number and returns Number
+  return account plus 10
+
+# simulate pipeline stages
+the variable source_value of type Number is 5
+the variable transform_value of type Number is call function get_age with argument source_value
+the variable transform_value of type Number is transform_value times 2
+the variable sink_value of type Number is call function calculate_balance with argument transform_value
+
+print "source value:"
+print the variable source_value
+print "transform value:"
+print the variable transform_value
+print "sink value:"
+print the variable sink_value
+
+# simulate processing multiple items
+the variable item_one of type Number is 1
+the variable item_two of type Number is 2
+the variable item_three of type Number is 3
+
+the variable result_one of type Number is call function calculate_balance with argument item_one
+the variable result_two of type Number is call function calculate_balance with argument item_two
+the variable result_three of type Number is call function calculate_balance with argument item_three
+
+print "result 1:"
+print the variable result_one
+print "result 2:"
+print the variable result_two
+print "result 3:"
+print the variable result_three

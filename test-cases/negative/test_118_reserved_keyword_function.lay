@@ -1,0 +1,7 @@
+# negative test: using reserved keyword as function name
+# expected: parser should reject this
+
+define function return that takes nothing and returns Void
+  print 'hello'
+
+

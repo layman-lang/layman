@@ -1,0 +1,34 @@
+# test case 40
+# description: A simple arithmetic expression is evaluated to verify that it returns the expected result when the 2 numbers being added together are both positive integers and when 1 of them is a negative integer. The test will check if the program handles these scenarios correctly and consistently, without any errors or unexpected behavior.
+
+define function add_numbers that takes a as Number and b as Number and returns Number
+  return a plus b
+
+# test with positive integers
+the variable number1 of type Number is 5
+the variable number2 of type Number is 3
+the variable result_positive of type Number is call function add_numbers with argument number1 and argument number2
+
+print "result with positive numbers:"
+print the variable result_positive
+
+# test with 1 negative integer
+the variable number3 of type Number is 5
+the variable number4 of type Number is minus 3
+the variable result_mixed of type Number is call function add_numbers with argument number3 and argument number4
+
+print "result with mixed numbers:"
+print the variable result_mixed
+
+# verify results
+if result_positive is 8 then
+  print "positive addition correct"
+else
+  print "error occurred during calculation"
+end if
+
+if result_mixed is 2 then
+  print "mixed addition correct"
+else
+  print "error occurred during calculation"
+end if

@@ -1,0 +1,6 @@
+# negative test: using reserved keyword as variable name
+# expected: parser should reject this
+
+the variable if of type Number is 5
+
+

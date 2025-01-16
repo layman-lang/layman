@@ -1,0 +1,6 @@
+# negative test: invalid type annotation syntax
+# expected: parser should reject this
+
+the variable x of type is Number
+
+

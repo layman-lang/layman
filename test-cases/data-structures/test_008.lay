@@ -1,0 +1,18 @@
+# test case 8
+# description: Here is a test case description for Test Case Number 8:
+
+# Write a program that defines a variable `x` with type `int` and assigns it the value of another variable `y`, then prints the value of `x`.
+
+# define variable y first
+the variable y of type Number is 10
+
+# define variable x and assign it the value of y
+the variable x of type Number is y
+
+# print the value of x
+print the variable x
+
+# also demonstrate that x can be modified based on y
+the variable y of type Number is 15
+the variable x of type Number is y
+print the variable x

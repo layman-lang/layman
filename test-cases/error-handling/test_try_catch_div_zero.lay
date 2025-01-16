@@ -1,0 +1,8 @@
+try
+    print "Attempting division by zero"
+    the variable x of type Number is 10 divided by 0
+    print "This should not be printed"
+catch error
+    print "Caught error: " + error
+end try
+print "Program continued"

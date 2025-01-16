@@ -1,0 +1,38 @@
+# test case 46
+# description: Here is a possible test case description for Test Case Number 46:
+
+# Test Case 46: "Adding and Retrieving Key-Value Pairs" - Write a program that defines an empty dictionary, adds a few key-value pairs to it, and then retrieves and prints out the values associated with specific keys.
+
+# simulate dictionary with key-value pairs using variables
+the variable names of type Dictionary of String to String is a dictionary with "person1" is "john", "person2" is "jane"
+the variable ages of type Dictionary of String to Number is a dictionary with "person1" is 30, "person2" is 25
+
+# count of people
+the variable count_of_people of type Number is 2
+
+# calculate average age
+the variable age1 of type Number is ages["person1"]
+the variable age2 of type Number is ages["person2"]
+the variable total_age of type Number is age1 plus age2
+the variable average_age of type Number is total_age divided by count_of_people
+
+# verify we have enough people
+if count_of_people is greater than 1 then
+  print "average age:"
+  print the variable average_age
+else
+  print "not enough people"
+end if
+
+# retrieve and print key-value pairs
+print "person1 name:"
+the variable name1 of type String is names["person1"]
+print the variable name1
+print "person1 age:"
+print the variable age1
+
+print "person2 name:"
+the variable name2 of type String is names["person2"]
+print the variable name2
+print "person2 age:"
+print the variable age2

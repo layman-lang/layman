@@ -1,0 +1,18 @@
+# test case 41
+# description: The Layman Programming Language Test Case 41 is designed to verify that a variable can be declared and assigned a value within a single statement, and also to check that multiple assignments are allowed within a single declaration. The test script will create 2 variables, `x` and `y`, and assign the values `5` and `10` to them in a single line of code.
+
+# declare and assign variables in single statements
+the variable x of type Number is 5
+the variable y of type Number is 10
+
+# verify the assignments
+print the variable x
+print the variable y
+
+# demonstrate multiple assignments (simulated by assigning multiple variables)
+the variable a of type Number is 5
+the variable b of type Number is 10
+the variable sum_result of type Number is a plus b
+
+print "multiple assignments verified:"
+print the variable sum_result

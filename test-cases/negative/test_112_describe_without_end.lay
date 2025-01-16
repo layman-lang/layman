@@ -1,0 +1,9 @@
+# negative test: describe statement without end describe
+# expected: parser should reject this
+
+describe 'my suite'
+  test 'test'
+    expect 5 is 5
+  end test
+
+

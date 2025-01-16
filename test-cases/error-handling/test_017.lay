@@ -1,0 +1,34 @@
+# test case 17
+# description: Here is a test case description for layman programming language test case number 17:
+
+# The program should correctly sum up the values of all numbers stored in an array and return the total, even if the input array contains both positive and negative numbers. The program's output must be accurate and consistent with standard arithmetic operations, and it must handle arrays with 0 or single-element values without errors.
+
+define function calculate_total that takes dummy as Number and returns Number
+  # use real List
+  try
+    # use real List
+    the variable numbers of type List of Number is a list containing 5, -3, 10, -2, 8
+    # try to access out of bounds to trigger error (just to test try/catch)
+    # or just sum them up
+    the variable total of type Number is 0
+    for each n in numbers do
+      the variable total of type Number is total plus n
+    end for
+    
+    # Simulate an error condition check
+    if total is 0 then
+      throw "Total cannot be zero"
+    end if
+    
+    return total
+  catch error
+    print "Caught error: " + error
+    return 0
+  end try
+
+# test calculation
+the variable dummy_value of type Number is 0
+the variable total of type Number is call function calculate_total with argument dummy_value
+
+print "total:"
+print the variable total

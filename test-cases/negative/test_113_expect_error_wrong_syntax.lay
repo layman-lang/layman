@@ -1,0 +1,8 @@
+# negative test: expect error with wrong syntax
+# expected: parser should reject this
+
+expect error
+  throw 'error'
+is 'error message'
+
+

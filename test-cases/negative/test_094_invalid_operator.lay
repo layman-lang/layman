@@ -1,0 +1,6 @@
+# negative test: invalid operator usage
+# expected: parser should reject this
+
+the variable x of type Number is 5 @ 7
+
+
